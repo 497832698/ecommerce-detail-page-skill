@@ -1,0 +1,12 @@
+# 输出文件（策划文档HTML、截图）
+outputs/
+
+# macOS
+.DS_Store
+
+# 打包文件
+*.zip
+
+# Python
+__pycache__/
+*.pyc

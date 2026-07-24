@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>零食详情页 — {{PRODUCT_NAME}}</title>
+<style>
+  :root {
+    --primary: #F5E6D3;
+    --accent: #E8B86D;
+    --bg: #FFFDF9;
+    --text: #3D3226;
+    --text-light: #8B7355;
+    --white: #FFFFFF;
+    --font: "PingFang SC", "Alibaba PuHuiTi", "Helvetica Neue", sans-serif;
+    --width: 750px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: var(--font);
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: var(--width);
+    max-width: 100%;
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  /* 通用 Section */
+  .section {
+    padding: 60px 40px;
+    text-align: center;
+  }
+  .section-label {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+  .section-subtitle {
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 32px;
+  }
+
+  /* 首屏 Hero */
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--bg) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+  }
+  .hero-img {
+    width: 400px;
+    height: 400px;
+    background: #eee;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .hero-sellpoint {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  .hero-reason {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+  .hero-scene {
+    font-size: 14px;
+    color: var(--accent);
+    background: rgba(232, 184, 109, 0.1);
+    padding: 8px 24px;
+    border-radius: 20px;
+  }
+
+  /* 产地/痛点 屏 */
+  .origin {
+    background: var(--white);
+  }
+  .origin-map {
+    width: 100%;
+    height: 300px;
+    background: #f0ede6;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .pain-point {
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .pain-point-card {
+    flex: 1;
+    background: #FFFAF5;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: left;
+  }
+  .pain-point-card .icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .pain-point-card h4 {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .pain-point-card p {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+
+  /* 原料/成分 屏 */
+  .ingredients {
+    background: var(--bg);
+  }
+  .ingredient-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .ingredient-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+  .ingredient-card .img {
+    width: 80px;
+    height: 80px;
+    background: #f5f0e8;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+  .ingredient-card h4 {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  /* 工艺/口感 屏 */
+  .craft {
+    background: var(--white);
+  }
+  .craft-steps {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .craft-step {
+    text-align: center;
+  }
+  .craft-step .num {
+    width: 48px;
+    height: 48px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0 auto 12px;
+  }
+  .craft-step h4 {
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  /* 品质证明 屏 */
+  .trust {
+    background: var(--bg);
+  }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .trust-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: left;
+  }
+  .trust-card .badge {
+    width: 48px;
+    height: 48px;
+    background: #f5f0e8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .trust-card h4 {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .trust-card p {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+
+  /* 场景/CTA 屏 */
+  .cta {
+    background: linear-gradient(180deg, var(--white) 0%, var(--primary) 100%);
+    padding: 80px 40px;
+  }
+  .cta-scenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .cta-scene-card {
+    text-align: center;
+  }
+  .cta-scene-card .img {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #f5f0e8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .cta-scene-card p {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 48px;
+    border-radius: 30px;
+    margin-top: 24px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ====== 首屏 Hero ====== -->
+  <section class="hero">
+    <div class="hero-img">{{PRODUCT_IMAGE_PLACEHOLDER}}</div>
+    <h1 class="hero-sellpoint">{{HERO_SELLPOINT}}</h1>
+    <p class="hero-reason">{{HERO_REASON}}</p>
+    <span class="hero-scene">{{HERO_SCENE}}</span>
+  </section>
+
+  <!-- ====== 第二屏：产地 & 痛点 ====== -->
+  <section class="section origin">
+    <span class="section-label">WHY</span>
+    <h2 class="section-title">{{ORIGIN_TITLE}}</h2>
+    <p class="section-subtitle">{{ORIGIN_SUBTITLE}}</p>
+    <div class="origin-map">{{ORIGIN_MAP_PLACEHOLDER}}</div>
+    <div class="pain-point">
+      <div class="pain-point-card">
+        <div class="icon">{{PAIN_ICON_1}}</div>
+        <h4>{{PAIN_TITLE_1}}</h4>
+        <p>{{PAIN_DESC_1}}</p>
+      </div>
+      <div class="pain-point-card">
+        <div class="icon">{{PAIN_ICON_2}}</div>
+        <h4>{{PAIN_TITLE_2}}</h4>
+        <p>{{PAIN_DESC_2}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 第三屏：原料 & 成分 ====== -->
+  <section class="section ingredients">
+    <span class="section-label">INGREDIENTS</span>
+    <h2 class="section-title">{{INGREDIENTS_TITLE}}</h2>
+    <p class="section-subtitle">{{INGREDIENTS_SUBTITLE}}</p>
+    <div class="ingredient-grid">
+      <div class="ingredient-card">
+        <div class="img">{{INGREDIENT_ICON_1}}</div>
+        <h4>{{INGREDIENT_NAME_1}}</h4>
+      </div>
+      <div class="ingredient-card">
+        <div class="img">{{INGREDIENT_ICON_2}}</div>
+        <h4>{{INGREDIENT_NAME_2}}</h4>
+      </div>
+      <div class="ingredient-card">
+        <div class="img">{{INGREDIENT_ICON_3}}</div>
+        <h4>{{INGREDIENT_NAME_3}}</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 第四屏：工艺 & 口感 ====== -->
+  <section class="section craft">
+    <span class="section-label">CRAFT</span>
+    <h2 class="section-title">{{CRAFT_TITLE}}</h2>
+    <p class="section-subtitle">{{CRAFT_SUBTITLE}}</p>
+    <div class="craft-steps">
+      <div class="craft-step">
+        <div class="num">1</div>
+        <h4>{{CRAFT_STEP_1}}</h4>
+      </div>
+      <div class="craft-step">
+        <div class="num">2</div>
+        <h4>{{CRAFT_STEP_2}}</h4>
+      </div>
+      <div class="craft-step">
+        <div class="num">3</div>
+        <h4>{{CRAFT_STEP_3}}</h4>
+      </div>
+      <div class="craft-step">
+        <div class="num">4</div>
+        <h4>{{CRAFT_STEP_4}}</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 第五屏：品质证明 ====== -->
+  <section class="section trust">
+    <span class="section-label">TRUST</span>
+    <h2 class="section-title">{{TRUST_TITLE}}</h2>
+    <p class="section-subtitle">{{TRUST_SUBTITLE}}</p>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="badge">{{TRUST_BADGE_1}}</div>
+        <h4>{{TRUST_ITEM_1}}</h4>
+        <p>{{TRUST_DESC_1}}</p>
+      </div>
+      <div class="trust-card">
+        <div class="badge">{{TRUST_BADGE_2}}</div>
+        <h4>{{TRUST_ITEM_2}}</h4>
+        <p>{{TRUST_DESC_2}}</p>
+      </div>
+      <div class="trust-card">
+        <div class="badge">{{TRUST_BADGE_3}}</div>
+        <h4>{{TRUST_ITEM_3}}</h4>
+        <p>{{TRUST_DESC_3}}</p>
+      </div>
+      <div class="trust-card">
+        <div class="badge">{{TRUST_BADGE_4}}</div>
+        <h4>{{TRUST_ITEM_4}}</h4>
+        <p>{{TRUST_DESC_4}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 第六屏：场景 & CTA ====== -->
+  <section class="section cta">
+    <span class="section-label">SCENES</span>
+    <h2 class="section-title">{{CTA_TITLE}}</h2>
+    <p class="section-subtitle">{{CTA_SUBTITLE}}</p>
+    <div class="cta-scenes">
+      <div class="cta-scene-card">
+        <div class="img">{{CTA_SCENE_1_ICON}}</div>
+        <p>{{CTA_SCENE_1}}</p>
+      </div>
+      <div class="cta-scene-card">
+        <div class="img">{{CTA_SCENE_2_ICON}}</div>
+        <p>{{CTA_SCENE_2}}</p>
+      </div>
+      <div class="cta-scene-card">
+        <div class="img">{{CTA_SCENE_3_ICON}}</div>
+        <p>{{CTA_SCENE_3}}</p>
+      </div>
+    </div>
+    <div class="cta-btn">{{CTA_BUTTON}}</div>
+  </section>
+
+</div>
+</body>
+</html>
