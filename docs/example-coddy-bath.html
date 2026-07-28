@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>可蒂家 婴童泡泡沐浴露 · 详情页策划文档（v2 · 含广告法合规提示）</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f4f1ee; color: #3a3a3a; line-height: 1.7;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; background: #fff; }
+  .hero {
+    background: linear-gradient(135deg, #fff9f6 0%, #fde8e4 100%);
+    padding: 48px 32px 40px; border-bottom: 3px solid #e8a9a0;
+  }
+  .hero .tag {
+    display: inline-block; background: #e8a9a0; color: #fff;
+    font-size: 13px; padding: 4px 12px; border-radius: 20px; margin-bottom: 14px;
+  }
+  .hero h1 { font-size: 28px; color: #2c2c2c; margin-bottom: 8px; letter-spacing: 1px; }
+  .hero .sub { font-size: 15px; color: #8a6a64; }
+  .hero .meta { margin-top: 18px; font-size: 13px; color: #a08a84; }
+  section { padding: 36px 32px; border-bottom: 1px solid #f0e9e6; }
+  h2 {
+    font-size: 20px; color: #2c2c2c; margin-bottom: 20px;
+    padding-left: 12px; border-left: 4px solid #e8a9a0;
+  }
+  h3 { font-size: 16px; color: #5a4a46; margin: 22px 0 10px; }
+  p, li { font-size: 14px; color: #555; }
+  .card {
+    background: #faf7f5; border: 1px solid #f0e6e2; border-radius: 12px;
+    padding: 18px 20px; margin: 14px 0;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; }
+  th, td { border: 1px solid #ece2de; padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: #fbeeeb; color: #6a4a44; font-weight: 600; }
+  .rc { background: #eef6fa; }
+  .link {
+    display: inline-block; background: #eef6fa; color: #2c7fb0;
+    font-size: 12px; padding: 3px 10px; border-radius: 6px; text-decoration: none;
+    word-break: break-all; margin-top: 4px;
+  }
+  .warn { color: #c0392b; font-size: 12px; }
+  .screen {
+    background: #fff; border: 2px solid #f0e0dc; border-radius: 14px;
+    padding: 22px; margin: 18px 0; position: relative;
+  }
+  .screen .no {
+    position: absolute; top: -14px; left: 22px; background: #e8a9a0; color: #fff;
+    width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; font-size: 14px; font-weight: bold;
+  }
+  .screen h3 { margin-top: 6px; color: #2c2c2c; }
+  .mc {
+    background: #fff4f1; border-left: 4px solid #e8a9a0; padding: 10px 14px;
+    margin: 10px 0; border-radius: 0 8px 8px 0;
+  }
+  .mc .lab { font-size: 11px; color: #c08a82; letter-spacing: 1px; }
+  .mc .txt { font-size: 19px; color: #2c2c2c; font-weight: 700; margin-top: 2px; }
+  .mc .len { font-size: 11px; color: #b0a0a0; float: right; }
+  .fc { font-size: 13px; color: #6a5a56; padding: 4px 0; }
+  .fc b { color: #e8a9a0; }
+  .reason {
+    background: #f0f7f4; border-radius: 8px; padding: 12px 14px; margin-top: 12px;
+    font-size: 13px; color: #4a5a52;
+  }
+  .reason b { color: #3a7a5a; }
+  .pill { display: inline-block; background: #eef6fa; color: #2c7fb0; font-size: 12px; padding: 2px 9px; border-radius: 12px; margin: 2px; }
+  .strategy-box {
+    background: linear-gradient(135deg, #fff9f6, #fdeee9);
+    border: 2px dashed #e8a9a0; border-radius: 14px; padding: 24px; text-align: center;
+    font-size: 17px; color: #c0554a; font-weight: 700; margin: 10px 0;
+  }
+  .footer { padding: 28px 32px; font-size: 12px; color: #aaa; text-align: center; }
+  .clr { display: inline-block; width: 16px; height: 16px; border-radius: 4px; vertical-align: middle; margin-right: 6px; }
+  /* 广告法合规提示样式 */
+  .legal {
+    background: #fff8ec; border: 2px solid #f0c36d; border-radius: 14px;
+    padding: 22px 24px; margin: 14px 0;
+  }
+  .legal h2 { border-left-color: #f0c36d; color: #9a6a00; }
+  .legal .lk {
+    border-left: 4px solid #e8a9a0; background: #fff; border-radius: 0 8px 8px 0;
+    padding: 12px 16px; margin: 12px 0;
+  }
+  .legal .lk .name { font-size: 15px; font-weight: 700; color: #c0554a; }
+  .legal .lk .need { font-size: 13px; color: #555; margin-top: 6px; }
+  .legal .lk .ban { font-size: 13px; color: #c0392b; margin-top: 4px; }
+  .legal .badge {
+    display: inline-block; background: #f0c36d; color: #fff; font-size: 11px;
+    padding: 2px 8px; border-radius: 10px; margin-left: 8px; vertical-align: middle;
+  }
+  .fbe-warn {
+    background: #fff3f0; border: 1px dashed #e8a9a0; border-radius: 8px;
+    padding: 8px 12px; margin-top: 8px; font-size: 12px; color: #c0554a;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <span class="tag">洗护用品 · 详情页策划</span>
+    <h1>可蒂家 · 婴童泡泡沐浴露</h1>
+    <div class="sub">详情页前期策划文档 v2 — 已应用「广告法合规规则」（wash-care.md）</div>
+    <div class="meta">产品：可蒂家婴童泡泡沐浴露 ｜ 品类：洗护用品/婴童沐浴露 ｜ 生成日期：2026-07-28</div>
+  </div>
+
+  <!-- 一、消费者分析 -->
+  <section>
+    <h2>一、消费者分析</h2>
+    <div class="card">
+      <table>
+        <tr><th style="width:120px">维度</th><th>洞察</th></tr>
+        <tr><td><b>购买者</b></td><td>妈妈（25-38岁），新手妈妈占比高，孩子刚出生或 0-3 岁</td></tr>
+        <tr><td><b>使用者</b></td><td>初生宝宝 / 婴幼儿，肌肤屏障未发育完全，极度娇嫩</td></tr>
+        <tr><td><b>购买原因 TOP3</b></td><td>① 成分安全、不刺激（第一优先级）② 新生儿/初生肌专用 ③ 泡泡好玩、宝宝不抗拒洗澡</td></tr>
+        <tr><td><b>真正想获得</b></td><td>一个"从出生第一天起就能放心用"的洗护方案，不用反复换产品试错</td></tr>
+        <tr><td><b>最担心</b></td><td>化学成分致敏、洗掉宝宝天然保护、假滑冲不干净、香味刺鼻</td></tr>
+        <tr><td><b>竞品未满足</b></td><td>几乎所有竞品都说"温和氨基酸"，<b>没人讲"初生肌的天然保护（胎脂）"</b>——这是最大的空白</td></tr>
+      </table>
+    </div>
+    <div class="reason">
+      <b>关键判断：</b>本品的核心人群是<b>初生宝宝妈妈</b>，不是 3 岁+ 大童妈妈。竞品（英氏/babycare/舒肤佳）多数定位"3岁可用""全年龄段"，把初生人群当成默认覆盖、却没专门讲。我们反其道——<b>把"守护初生肌"做成唯一主题</b>。
+    </div>
+  </section>
+
+  <!-- 二、竞品分析 -->
+  <section>
+    <h2>二、竞品分析（4 个真实竞品）</h2>
+    <p style="font-size:13px;color:#999;margin-bottom:12px">选品标准：销量好 + 页面用心 + 与本品定位相关。链接均为可点击的商品详情页直链（京东系）。</p>
+
+    <div class="card rc">
+      <h3>竞品 1：英氏 儿童洗发沐浴二合一（小奶泡慕斯）</h3>
+      <table>
+        <tr><td style="width:90px"><b>数据</b></td><td>评论数 <b>50万+</b> ｜ 好评率 99% ｜ 京东自营旗舰店 ｜ ¥78.32（350ml×2）</td></tr>
+        <tr><td><b>首屏策略</b></td><td>主打"10倍绵密泡泡 + 氨基酸洁净不辣眼"，走趣味+氨基酸路线，颜值彩虹罐</td></tr>
+        <tr><td><b>核心话术</b></td><td>"APG+氨基酸双重表活""0酒精0色素0皂基""新生儿也能安心用"</td></tr>
+        <tr><td><b>视觉风格</b></td><td>樱花粉色调、彩虹罐、萌趣，偏"好玩"而非"专业安心"</td></tr>
+        <tr><td><b>做得好</b></td><td>出泡方式（一按出泡）和趣味性极强，二合一省心，销量验证</td></tr>
+        <tr><td><b>没做到</b></td><td>没讲"初生肌/胎脂"概念；香味偏香精感（樱花香），对极敏感肌妈妈不够"纯净"</td></tr>
+      </table>
+      <a class="link" href="https://jingfen.jd.com/detail/WaTNAKMymP2L7asSjxlgL7asSjxlgT_sweEZ0b5w0bKIMAtMk.html">商品直链：jingfen.jd.com/detail/WaTNAKMymP2L7asSjxlgL7asSjxlgT_sweEZ0b5w0bKIMAtMk.html（浏览器打开跳 item.jd.com）</a>
+    </div>
+
+    <div class="card rc">
+      <h3>竞品 2：舒肤佳 儿童泡泡沐浴露（无泪温和）</h3>
+      <table>
+        <tr><td style="width:90px"><b>数据</b></td><td>评论数 <b>2万+</b> ｜ 好评率 99% ｜ 京东官方旗舰店 ｜ ¥34.80（415g）</td></tr>
+        <tr><td><b>首屏策略</b></td><td>依托"舒肤佳=除菌"国民认知，主打"无泪温和 + 泡沫丰富 + 易冲洗"</td></tr>
+        <tr><td><b>核心话术</b></td><td>"植物氨基酸配方""棉花糖般绵密泡泡""萌趣巧虎瓶身"</td></tr>
+        <tr><td><b>视觉风格</b></td><td>蓝白清洁调（延续舒肤佳品牌色），专业清洁感</td></tr>
+        <tr><td><b>做得好</b></td><td>品牌信任度极高，除菌心智强，价格亲民</td></tr>
+        <tr><td><b>没做到</b></td><td>除菌≠护肤，对"初生肌屏障/胎脂"完全不触碰；调性偏"清洁"不够"呵护"</td></tr>
+      </table>
+      <a class="link" href="https://jingfen.jd.com/detail/Zv45IXSrxyWLXfr0nnnaLXfEwfdEH4_3WEwxu4LAf5F3HirZ8.html">商品直链：jingfen.jd.com/detail/Zv45IXSrxyWLXfr0nnnaLXfEwfdEH4_3WEwxu4LAf5F3HirZ8.html</a>
+    </div>
+
+    <div class="card rc">
+      <h3>竞品 3：babycare 桃叶洗沐二合一（桃子水）</h3>
+      <table>
+        <tr><td style="width:90px"><b>数据</b></td><td>评论数 <b>20万+</b> ｜ 好评率 99% ｜ 京东自营旗舰店 ｜ ¥74（330ml）</td></tr>
+        <tr><td><b>首屏策略</b></td><td>母婴颜值标杆，主打"桃叶植物精粹 + 清爽舒敏 + 慕斯柔滑"</td></tr>
+        <tr><td><b>核心话术</b></td><td>"桃叶精华舒缓夏季敏感""温和不辣眼""孕婴可用"</td></tr>
+        <tr><td><b>视觉风格</b></td><td>极简高级灰白、桃粉点缀，设计感强，溢价高</td></tr>
+        <tr><td><b>做得好</b></td><td>品牌调性高级、信任感强；植物精粹路线对的</td></tr>
+        <tr><td><b>没做到</b></td><td>讲"舒敏"但没讲"初生肌专属"；价格偏高，偏大童/全家</td></tr>
+      </table>
+      <a class="link" href="https://jingfen.jd.com/detail/DhQHD2dUd6yA2xkB4ebiA20a5dth6Q_3as8DQU6NxI25ByobB.html">商品直链：jingfen.jd.com/detail/DhQHD2dUd6yA2xkB4ebiA20a5dth6Q_3as8DQU6NxI25ByobB.html</a>
+    </div>
+
+    <div class="card">
+      <h3>竞品 4：强生婴儿 牛奶沐浴露（经典标杆）</h3>
+      <table>
+        <tr><td style="width:90px"><b>数据</b></td><td>品类经典国民品牌，京东销量榜"牛奶沐浴露"2万+ 评价、天猫超市在售 ｜ 约 ¥28-40（1kg）</td></tr>
+        <tr><td><b>首屏策略</b></td><td>"无泪配方 + 牛奶滋润"，主打温和经典、全家可用</td></tr>
+        <tr><td><b>核心话术</b></td><td>"PH中性""不破坏天然酸性保护层""新生儿也能用"</td></tr>
+        <tr><td><b>做得好</b></td><td>100年信任资产，妈妈默认安全感；价格极低</td></tr>
+        <tr><td><b>没做到</b></td><td>配方偏传统（牛奶滋润），无氨基酸/植萃/胎脂等新概念；调性老</td></tr>
+      </table>
+      <p class="warn">⚠ 链接待补充：强生婴儿京东自营旗舰店 / 强生婴儿旗舰店 经两轮搜索均未获得稳定商品详情页直链（仅淘客 uland 链接与折扣页）。数据来自京东销量排行榜与天猫超市在售信息，建议你在平台内搜索"强生婴儿 牛奶沐浴露"核对。</p>
+    </div>
+
+    <h3>竞品总结 & 我们的机会</h3>
+    <div class="card">
+      <table>
+        <tr><th>竞品普遍做法</th><th>我们的差异化机会</th></tr>
+        <tr><td>全部打"氨基酸温和 + 泡泡好玩"</td><td><b>"专利仿生胎脂"</b>——别人讲成分，我们讲"宝宝自带的防护膜"</td></tr>
+        <tr><td>定位"3岁+/全年龄段"，初生只是默认覆盖</td><td><b>"守护初生肌"</b>——把初生人群做成唯一主题，精准切新手妈妈</td></tr>
+        <tr><td>讲"植萃"但说不清是什么</td><td><b>"天然植萃成分"</b>——用看得懂的成分表建立信任</td></tr>
+        <tr><td>贝思诺等也做"氨基酸复配+植萃"，但数据多为软文</td><td>我们靠真实专利概念 + 初生定位，避开与它硬碰</td></tr>
+      </table>
+      <p style="font-size:12px;color:#999;margin-top:8px">注：贝思诺（四重氨基酸+植萃）与本品定位高度重叠，但其公开数据均来自测评软文、无商品详情页直链，故仅作定位参照，不列为数据竞品。</p>
+    </div>
+  </section>
+
+  <!-- 三、FBE 卖点转换 -->
+  <section>
+    <h2>三、FBE 卖点转换（全链路）</h2>
+    <p style="font-size:13px;color:#c0554a;margin-bottom:12px">⚠ 每个卖点下方均标注「上线前必须提供的解释」——详见下一章《广告法合规提示》。无对应证件的专有名词，详情页不得直接使用。</p>
+
+    <div class="card">
+      <h3>卖点 1：专利仿生胎脂</h3>
+      <p><b>F（特征）：</b>专利仿生胎脂技术，模拟新生儿天然胎脂结构</p>
+      <p><b>C（消费者真相）：</b>初生宝宝肌肤薄、屏障未发育，普通沐浴露会把天然胎脂洗掉，妈妈最怕"越洗越伤"</p>
+      <p><b>B（人话）：</b>❌"添加仿生胎脂" → ✅<b>"像宝宝自带的防护膜，洗完还在"</b></p>
+      <p><b>E（情绪）：</b>被原生保护包裹、安心</p>
+      <p><b>V（画面）：</b>胎脂分子结构示意 + 新生儿娇嫩肌理特写，标注"出生就有的保护"</p>
+      <div class="fbe-warn">⚠ 上线前必须提供：专利号、专利名称、专利权人、专利类型，并在详情页标注专利号；禁用"唯一/首创/第一"等绝对化用语。</div>
+    </div>
+
+    <div class="card">
+      <h3>卖点 2：守护初生肌</h3>
+      <p><b>F：</b>专为初生（0月起）肌肤设计的配方体系</p>
+      <p><b>C：</b>初生肌和成人肌完全不同，妈妈不确定"出生就能用吗"</p>
+      <p><b>B：</b>❌"适合新生儿" → ✅<b>"出生第一天就能用"</b></p>
+      <p><b>E：</b>被专属照顾、不将就</p>
+      <p><b>V：</b>初生宝宝洗澡的温柔场景 + "0岁可用"标识</p>
+      <div class="fbe-warn">⚠ 上线前必须提供：配方通过初生肌适用测试/权威机构佐证（避免"医用/治疗/修复"等暗示疗效的词）；"0岁可用"需有检测或备案依据。</div>
+    </div>
+
+    <div class="card">
+      <h3>卖点 3：三重复配氨基酸表活</h3>
+      <p><b>F：</b>三种氨基酸表面活性剂科学复配</p>
+      <p><b>C：</b>妈妈怕皂基/硫酸盐刺激，但单种氨基酸清洁力又不够</p>
+      <p><b>B：</b>❌"三重氨基酸温和" → ✅<b>"洗完不干不假滑，宝宝不抗拒"</b></p>
+      <p><b>E：</b>安心、省心</p>
+      <p><b>V：</b>氨基酸分子 vs 皂基对比图（左"紧绷" 右"水润"）+ 冲洗后肌肤特写</p>
+      <div class="fbe-warn">⚠ 上线前必须提供：具体是哪三种氨基酸表活、复配比例或依据；禁用"最强/最温和/极致"等极限词，避免与"医用级"混淆。</div>
+    </div>
+
+    <div class="card">
+      <h3>卖点 4：天然植萃成分</h3>
+      <p><b>F：</b>天然植物萃取成分</p>
+      <p><b>C：</b>妈妈翻成分表最怕看不懂的化学名</p>
+      <p><b>B：</b>❌"天然植萃" → ✅<b>"成分表你看得懂，没有看不懂的化学名"</b></p>
+      <p><b>E：</b>彻底放心</p>
+      <p><b>V：</b>植物原料（如金盏花/洋甘菊）+ 放大版成分表，高亮"看得懂的安全"</p>
+      <div class="fbe-warn">⚠ 上线前必须提供：具体植物名称及含量/来源；禁用"纯天然/100%无添加/零化学"等无法佐证的绝对化表述。</div>
+    </div>
+  </section>
+
+  <!-- 四、广告法合规提示（应用 wash-care.md 规则） -->
+  <section class="legal">
+    <h2>四、广告法合规提示（上线前必查）<span class="badge">按 wash-care.md 规则生成</span></h2>
+    <p style="font-size:13px;color:#9a6a00;margin-bottom:6px">本策划文档含 4 个专利/专有名词，依据 <b>wash-care.md · 广告法规则</b>，每个名词都必须有对应解释与佐证，否则详情页不得直接使用。请逐项补全后再执行设计。</p>
+
+    <div class="lk">
+      <div class="name">1. 专利仿生胎脂</div>
+      <div class="need">📋 需提供解释：① 专利号、专利名称、专利权人、专利类型（发明/实用新型）② 仿生胎脂与新生儿天然胎脂的对应关系说明<br>🔗 佐证：国家知识产权局专利查询截图 / 专利证书</div>
+      <div class="ban">🚫 禁用："唯一/首创/第一/全球领先"等绝对化用语；不得暗示"治疗/修复"功效</div>
+    </div>
+
+    <div class="lk">
+      <div class="name">2. 守护初生肌</div>
+      <div class="need">📋 需提供解释：① "初生肌"的界定（适用月龄）② 配方通过初生肌适用性测试的依据（检测报告/备案）<br>🔗 佐证：第三方检测报告、产品备案凭证</div>
+      <div class="ban">🚫 禁用："医用/治疗/修复屏障"等暗示医疗功效的词；"0岁可用"须有检测或备案依据，不得泛称</div>
+    </div>
+
+    <div class="lk">
+      <div class="name">3. 三重复配氨基酸表活</div>
+      <div class="need">📋 需提供解释：① 具体哪三种氨基酸表面活性剂（INCI名）② 复配比例或协同依据<br>🔗 佐证：成分表备案、供应商原料证明</div>
+      <div class="ban">🚫 禁用："最强/最温和/极致温和"等极限词；不得与"医用级/医院同款"混淆</div>
+    </div>
+
+    <div class="lk">
+      <div class="name">4. 天然植萃成分</div>
+      <div class="need">📋 需提供解释：① 具体植物名称（如金盏花/洋甘菊）② 含量或来源说明<br>🔗 佐证：成分备案、原料溯源</div>
+      <div class="ban">🚫 禁用："纯天然/100%无添加/零化学"等无法佐证的绝对化表述；"无添加"须明确列明未添加的物质</div>
+    </div>
+
+    <div class="reason" style="background:#fff4e0">
+      <b>设计侧提醒：</b>以上名词一旦进入详情页文案，即受《广告法》《化妆品监督管理条例》约束。策划阶段就把"解释+佐证"缺口标出来，比设计完被法务打回再改，成本低得多。建议把"需提供"清单作为交付物附件随策划文档一起给到品牌方。
+    </div>
+  </section>
+
+  <!-- 五、逐屏策划 -->
+  <section>
+    <h2>五、逐屏策划（洗护逻辑：问题→原理→信任→功效→安全→囤货）</h2>
+
+    <div class="screen">
+      <div class="no">1</div>
+      <h3>首屏 · 锁定"初生肌"</h3>
+      <div class="mc">
+        <span class="lab">主文案（≤10字）</span><span class="len">8字</span>
+        <div class="txt">出生第一天就能用</div>
+      </div>
+      <div class="mc">
+        <span class="lab">副文案（≤12字）</span><span class="len">8字</span>
+        <div class="txt">仿生胎脂，洗后还在</div>
+      </div>
+      <div class="fc"><b>辅助标签：</b><span class="pill">专利仿生胎脂</span><span class="pill">三重氨基酸</span><span class="pill">天然植萃</span></div>
+      <div class="fc"><b>画面：</b>初生宝宝洗澡的温柔特写（手部入水/嫩肌）+ 产品主体 + 绵密泡泡，暖奶白背景。旁标"0岁可用"。</div>
+      <div class="fc"><b>AI Prompt：</b>新生婴儿在温暖浴室中洗澡，肌肤娇嫩泛粉，旁边一瓶柔和粉调泡泡沐浴露，自然光，温馨母婴风格。</div>
+      <div class="reason"><b>设计理由：</b>洗护首屏要先抛"人群"再抛"功效"。竞品首屏都在说"泡泡/氨基酸"，我们直接用"出生第一天就能用"锁定初生人群——这是新手妈妈最纠结的瞬间（刚出生的宝宝到底用什么？），一句话降低决策门槛，并自然带出核心差异化"仿生胎脂"。<span style="color:#c0554a">（注：主文案"出生第一天就能用"须以"初生肌适用测试/备案"为依据，见第四章合规提示）</span></div>
+    </div>
+
+    <div class="screen">
+      <div class="no">2</div>
+      <h3>第二屏 · 制造认知差（痛点+原理）</h3>
+      <div class="mc">
+        <span class="lab">主文案（≤10字）</span><span class="len">8字</span>
+        <div class="txt">普通沐浴露伤初肤</div>
+      </div>
+      <div class="mc">
+        <span class="lab">副文案（≤12字）</span><span class="len">8字</span>
+        <div class="txt">皂基洗走天然胎脂</div>
+      </div>
+      <div class="fc"><b>辅助：</b>胎脂 = 宝宝自带的防护膜，出生后逐渐脱落</div>
+      <div class="fc"><b>画面：</b>左右对比——左：普通皂基沐浴露洗后肌肤"紧绷泛红"；右：仿生胎脂"补回保护膜，水润"。中间标注"胎脂去哪了？"</div>
+      <div class="reason"><b>设计理由：</b>妈妈不知道"胎脂会被普通沐浴露洗掉"。先制造认知差——普通产品破坏宝宝天然屏障，我们的仿生胎脂是"补回来"。这不是说我们好，而是让她自己意识到"原来之前的沐浴露可能洗掉了宝宝的保护"，从而把我们当成答案。<span style="color:#c0554a">（对比图须客观，不得贬低具体品牌，只讲工艺差异）</span></div>
+    </div>
+
+    <div class="screen">
+      <div class="no">3</div>
+      <h3>第三屏 · 信任核心（成分可视化）</h3>
+      <div class="mc">
+        <span class="lab">主文案（≤10字）</span><span class="len">7字</span>
+        <div class="txt">仿生胎脂怎么护</div>
+      </div>
+      <div class="mc">
+        <span class="lab">副文案（≤12字）</span><span class="len">8字</span>
+        <div class="txt">像自带膜，洗后还在</div>
+      </div>
+      <div class="fc"><b>辅助：</b>专利号 XXX（须填入真实专利号）｜ 分子结构示意（胎脂脂质 = 仿生成分）</div>
+      <div class="fc"><b>画面：</b>仿生胎脂分子结构轻盈示意 + 新生儿肌理微距特写，标注"洗的时候补上，洗完还在"。</div>
+      <div class="reason"><b>设计理由：</b>洗护的信任核心在"成分"，不在原料长相。把陌生专利词"仿生胎脂"翻译成"宝宝自带的防护膜，我们洗的时候补上"——让专利变成妈妈听得懂的安心。分子结构图给"科学性"，但不做成冷冰冰的实验室风。<span style="color:#c0554a">（专利号必须真实可查，见第四章合规提示）</span></div>
+    </div>
+
+    <div class="screen">
+      <div class="no">4</div>
+      <h3>第四屏 · 转化关键（功效可视化）</h3>
+      <div class="mc">
+        <span class="lab">主文案（≤10字）</span><span class="len">7字</span>
+        <div class="txt">洗完不干不假滑</div>
+      </div>
+      <div class="mc">
+        <span class="lab">副文案（≤12字）</span><span class="len">8字</span>
+        <div class="txt">三重氨基酸更温和</div>
+      </div>
+      <div class="fc"><b>辅助：</b>洗前干燥泛红 → 洗后水润 对比图</div>
+      <div class="fc"><b>画面：</b>宝宝洗后肌肤水润特写（柔光、微距）+ 洗前/洗后并置对比，标注"洗后即时水润"。</div>
+      <div class="reason"><b>设计理由：</b>洗护转化关键在"功效看得见"。妈妈要确认"洗完真的好"，用前后对比 + 水润特写建立"有效"认知。三重氨基酸在这里从"成分名词"变成"洗完不干"的体感，落到使用结果。<span style="color:#c0554a">（前后对比图须真实拍摄，不得合成夸大）</span></div>
+    </div>
+
+    <div class="screen">
+      <div class="no">5</div>
+      <h3>第五屏 · 安全背书（信任屏，权重最高）</h3>
+      <div class="mc">
+        <span class="lab">主文案（≤10字）</span><span class="len">7字</span>
+        <div class="txt">0岁可用才安心</div>
+      </div>
+      <div class="mc">
+        <span class="lab">副文案（≤12字）</span><span class="len">7字</span>
+        <div class="txt">无泪配方不刺激</div>
+      </div>
+      <div class="fc"><b>辅助：</b><span class="pill">小金盾/婴标</span><span class="pill">无泪配方</span><span class="pill">0添加清单</span></div>
+      <div class="fc"><b>画面：</b>认证标识排列（小金盾/检测报告缩略）+ 宝宝洗头不哭闹的真实场景，强化"安全到可以进眼睛"。</div>
+      <div class="reason"><b>设计理由：</b>洗护的"信任屏"权重远高于零食——妈妈愿意为"安全"多花 30%，但不愿为"好看"多花。所以婴标/无泪/无添加要前置且突出，直接回答"能不能天天用、进眼睛怕不怕"。这是下单前最后一道顾虑清除。<span style="color:#c0554a">（认证标识须真实有效，不得盗用他人认证）</span></div>
+    </div>
+
+    <div class="screen">
+      <div class="no">6</div>
+      <h3>第六屏 · 推动下单（场景+囤货）</h3>
+      <div class="mc">
+        <span class="lab">主文案（≤10字）</span><span class="len">7字</span>
+        <div class="txt">一瓶护全家初生</div>
+      </div>
+      <div class="mc">
+        <span class="lab">副文案（≤12字）</span><span class="len">7字</span>
+        <div class="txt">日常囤货更划算</div>
+      </div>
+      <div class="fc"><b>辅助：</b>规格组合（单瓶/2瓶/替换装）｜ 回购理由：刚需消耗，初生肌护理是长期事</div>
+      <div class="fc"><b>画面：</b>浴室场景（产品+泡泡+毛巾）+ 多瓶装组合展示，暗示"可回购的日常品"。</div>
+      <div class="reason"><b>设计理由：</b>刚需消耗品，强调囤货划算。初生肌护理是长期工程，引导多买。不推"赶紧抢"，而是用"日常囤"的建立复购心智——信任建立后的强复购是洗护最大的利润来源。</div>
+    </div>
+  </section>
+
+  <!-- 六、视觉方向 -->
+  <section>
+    <h2>六、整体视觉方向</h2>
+    <table>
+      <tr><th style="width:110px">维度</th><th>方案</th><th>商业理由</th></tr>
+      <tr><td><b>配色</b></td><td>
+        <span class="clr" style="background:#fff9f6"></span>暖奶白底 #FFF9F6<br>
+        <span class="clr" style="background:#e8a9a0"></span>初生肤粉 #E8A9A0（主色）<br>
+        <span class="clr" style="background:#7fb0c9"></span>安心蓝 #7FB0C9（点缀）<br>
+        <span class="clr" style="background:#8fbf8f"></span>植萃绿 #8FBF8F（点缀）
+      </td><td>在洗护通用"蓝绿安心"基础上，加入<b>初生暖调（奶白+肤粉）</b>突出"初生肌"主题，区别于英氏/babycare 的冷调，第一眼就暖、就温柔</td></tr>
+      <tr><td><b>摄影</b></td><td>自然光、 newborn 肌肤特写、泡泡质感、植物原料微距</td><td>洗护靠"质地感+肌肤感"建立品质，比产品静物更有说服力</td></tr>
+      <tr><td><b>字体</b></td><td>标题用粗体无衬线（阿里巴巴普惠体），功效词放大</td><td>专业感，避免卡通化显廉价</td></tr>
+      <tr><td><b>整体调性</b></td><td>三个关键词：<b>初生、温柔、安心</b></td><td>和零食"诱人"区分，和竞品"冷蓝/老牌"区分</td></tr>
+      <tr><td><b>避免</b></td><td>过度卡通（像玩具）、医疗冷感（像药）、大红大绿促销感</td><td>卡通显廉价、医疗吓人、促销伤品牌</td></tr>
+    </table>
+  </section>
+
+  <!-- 七、一句话策略 -->
+  <section>
+    <h2>七、一句话策略</h2>
+    <div class="strategy-box">
+      别人都在讲"温和氨基酸"，我们讲"宝宝自带的防护膜，洗完还在"。
+    </div>
+    <p style="font-size:14px;color:#666;text-align:center;margin-top:14px">
+      差异化锚点：<b>专利仿生胎脂 × 守护初生肌</b> —— 全场唯一把"初生人群 + 天然保护膜"做成主题的婴童沐浴露。
+    </p>
+  </section>
+
+  <div class="footer">
+    本报告由「snack-ecommerce-detail-page」Skill（洗护画像 wash-care.md）生成 · 已应用广告法合规规则 · 竞品数据来自公开电商平台，链接均为商品详情页直链 · 策划文档仅供设计执行参考
+  </div>
+
+</div>
+</body>
+</html>

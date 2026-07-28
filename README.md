@@ -28,6 +28,7 @@
 | 🍒 冻干山楂条 | "全场唯一把真实食材作为视觉主线" | [查看案例](docs/preview-hawthorn.png) |
 | 🧀 四重芝士鳕鱼肠 | "全场唯一把芝士从配角升级为主角" | [查看案例](docs/preview-cod.png) |
 | 🥩 猪肉脯 | "好肉，不需要甜来撑场面" | [查看案例](docs/preview-pork.png) |
+| 🧴 可蒂家婴童泡泡沐浴露 | "全场唯一把初生肌+专利胎脂做成主题" | [案例截图](docs/preview-coddy.png) · [完整文档](docs/example-coddy-bath.html) |
 
 每个案例都包含：竞品数据分析（附真实链接）→ FBE卖点转换 → 6屏逐屏策划（文案 ≤ 10字 + 画面描述 + AI Prompt + 设计理由）→ 整体视觉方向。
 
@@ -75,7 +76,10 @@ snack-ecommerce-detail-page/
 │   ├── detail-page-structure.md      # 6 屏结构规范 + 竞品分析框架 + 输出模板
 │   ├── visual-design-rules.md        # 色彩/字体/摄影/版式/竞品参考
 │   ├── review-standards.md           # 5 维度设计评审标准
-│   └── ai-design-rules.md            # AI 行为准则（三大禁忌 + 五项铁律）
+│   ├── ai-design-rules.md            # AI 行为准则（三大禁忌 + 五项铁律）
+│   └── categories/                   # 品类专属画像（跨品类逐步扩展）
+│       ├── _index.md                 # 品类路由索引表 + 新增品类模板
+│       └── wash-care.md              # 洗护用品品类画像（含广告法合规规则）
 └── assets/
     └── html-templates/
         └── template-general.html     # 通用详情页 HTML 模板（750px，CSS 变量可定制）
