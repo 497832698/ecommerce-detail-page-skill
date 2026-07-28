@@ -5,7 +5,7 @@
 [![Skill Type](https://img.shields.io/badge/type-WorkBuddy%20Skill-1A6B8A)](https://github.com/497832698/ecommerce-detail-page-skill)
 [![Version](https://img.shields.io/badge/version-v1.0-27AE60)](https://github.com/497832698/ecommerce-detail-page-skill/releases)
 [![Platform](https://img.shields.io/badge/platform-淘宝%20|%20天猫%20|%20京东%20|%20拼多多-e03e2d)](https://github.com/497832698/ecommerce-detail-page-skill)
-[![Phase](https://img.shields.io/badge/品类-零食🍒🍬🧀🥩-orange)](https://github.com/497832698/ecommerce-detail-page-skill)
+[![Phase](https://img.shields.io/badge/品类-零食🍒🍬🧀🥩%20|%20洗护🧴-orange)](https://github.com/497832698/ecommerce-detail-page-skill)
 
 ---
 
