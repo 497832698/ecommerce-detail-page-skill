@@ -5,7 +5,7 @@
 [![Skill Type](https://img.shields.io/badge/type-WorkBuddy%20Skill-1A6B8A)](https://github.com/497832698/ecommerce-detail-page-skill)
 [![Version](https://img.shields.io/badge/version-v1.0-27AE60)](https://github.com/497832698/ecommerce-detail-page-skill/releases)
 [![Platform](https://img.shields.io/badge/platform-淘宝%20|%20天猫%20|%20京东%20|%20拼多多-e03e2d)](https://github.com/497832698/ecommerce-detail-page-skill)
-[![Phase](https://img.shields.io/badge/品类-零食🍒🍬🧀🥩%20|%20洗护🧴-orange)](https://github.com/497832698/ecommerce-detail-page-skill)
+[![Phase](https://img.shields.io/badge/品类-零食🍒🍬🧀🥩%20|%20洗护🧴%20|%20日用品🪣%20|%20小家电📷-orange)](https://github.com/497832698/ecommerce-detail-page-skill)
 
 ---
 
@@ -29,8 +29,9 @@
 | 🧀 四重芝士鳕鱼肠 | "全场唯一把芝士从配角升级为主角" | [查看案例](docs/preview-cod.png) |
 | 🥩 猪肉脯 | "好肉，不需要甜来撑场面" | [查看案例](docs/preview-pork.png) |
 | 🧴 可蒂家婴童泡泡沐浴露 | "全场唯一把初生肌+专利胎脂做成主题" | [案例截图](docs/preview-coddy.png) · [完整文档](docs/example-coddy-bath.html) |
+| 📷 手持小风扇 | "全场唯一把双DC无刷电机+五档精细风控做成技术突破口" | [案例截图](docs/preview-fan.png) · [完整文档](docs/example-handheld-fan.html) |
 
-每个案例都包含：竞品数据分析（附真实链接）→ FBE卖点转换 → 6屏逐屏策划（文案 ≤ 10字 + 画面描述 + AI Prompt + 设计理由）→ 整体视觉方向。
+每个案例都包含：竞品数据分析（附真实链接）→ FBE卖点转换 → 逐屏策划（小家电等卖点密集品类可 10+ 屏，文案 ≤ 10字 + 画面描述 + AI Prompt + 设计理由）→ 整体视觉方向。
 
 ---
 
@@ -79,7 +80,9 @@ snack-ecommerce-detail-page/
 │   ├── ai-design-rules.md            # AI 行为准则（三大禁忌 + 五项铁律）
 │   └── categories/                   # 品类专属画像（跨品类逐步扩展）
 │       ├── _index.md                 # 品类路由索引表 + 新增品类模板
-│       └── wash-care.md              # 洗护用品品类画像（含广告法合规规则）
+│       ├── wash-care.md              # 洗护用品品类画像（含广告法合规规则）
+│       ├── daily-use.md              # 日用品品类画像（母婴/居家/个护小物/配饰，含广告法合规）
+│       └── small-appliance.md        # 小家电品类画像（风扇/行车记录仪/监控摄像头，含广告法合规）
 └── assets/
     └── html-templates/
         └── template-general.html     # 通用详情页 HTML 模板（750px，CSS 变量可定制）

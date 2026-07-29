@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手持小风扇 · 详情页策划方案</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; color: #2B2F33; background: #F5F6F7; line-height: 1.6; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { background: #2B2F33; color: #fff; border-radius: 14px; padding: 28px 30px; margin-bottom: 24px; }
+  header h1 { font-size: 24px; font-weight: 600; margin-bottom: 8px; }
+  header .sub { font-size: 14px; color: #B4B2A9; }
+  header .meta { font-size: 12px; color: #888780; margin-top: 12px; }
+  .tag { display: inline-block; background: #3A7BD5; color: #fff; font-size: 12px; padding: 3px 10px; border-radius: 20px; margin-right: 6px; }
+  section { background: #fff; border-radius: 14px; padding: 24px 28px; margin-bottom: 20px; border: 0.5px solid #E3E1DB; }
+  h2 { font-size: 18px; font-weight: 600; margin-bottom: 16px; padding-left: 12px; border-left: 4px solid #3A7BD5; }
+  h3 { font-size: 15px; font-weight: 600; margin: 18px 0 8px; color: #0C447C; }
+  p { font-size: 14px; margin-bottom: 8px; }
+  .muted { color: #888780; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+  th, td { border: 0.5px solid #E3E1DB; padding: 9px 10px; text-align: left; vertical-align: top; }
+  th { background: #F1EFE8; font-weight: 600; }
+  .screen { border: 0.5px solid #E3E1DB; border-radius: 12px; padding: 16px 18px; margin-bottom: 14px; }
+  .screen .no { display: inline-block; background: #2B2F33; color: #fff; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 6px; margin-bottom: 8px; }
+  .copy { background: #EAF3DE; border-radius: 8px; padding: 10px 14px; margin: 8px 0; }
+  .copy .main { font-size: 16px; font-weight: 600; color: #27500A; }
+  .copy .sub { font-size: 13px; color: #639922; margin-left: 10px; }
+  .copy .aux { font-size: 12px; color: #888780; margin-top: 4px; }
+  .label { font-size: 12px; font-weight: 600; color: #534AB7; margin-top: 8px; }
+  .warn { background: #FCEBEB; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #A32D2D; margin-top: 10px; }
+  .diff { background: #E6F1FB; border-left: 3px solid #185FA5; padding: 8px 12px; border-radius: 6px; font-size: 13px; color: #0C447C; margin-top: 8px; }
+  .pill { display:inline-block; background:#F1EFE8; border-radius:6px; padding:2px 8px; font-size:12px; margin:2px 4px 2px 0; }
+  .foot { text-align: center; color: #888780; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>手持小风扇 · 详情页策划方案</h1>
+  <div class="sub">基于 8 大卖点 + 3 家真实竞品详情页分析 · 12 屏弹性结构</div>
+  <div class="meta">品类：小家电 ｜ 策划日期：2026-07-28 ｜ 定位：前期策划工具（非成品页）</div>
+  <div style="margin-top:14px;">
+    <span class="tag">超级风力</span><span class="tag">五档精细风控</span><span class="tag">双DC无刷电机</span>
+    <span class="tag">续航狂魔</span><span class="tag">优雅随行</span><span class="tag">150g超轻</span>
+    <span class="tag">4色可选</span><span class="tag">人性化细节</span>
+  </div>
+</header>
+
+<!-- 阶段1 消费者 -->
+<section>
+  <h2>一、消费者画像（谁买、为什么、担心什么）</h2>
+  <p><b>核心人群：</b>18-35 岁通勤族 / 学生 / 户外党，购买者=使用者，年轻自用。</p>
+  <p><b>购买 TOP3 原因：</b>① 通勤户外真的热，要风大；② 不想一天充好几次，要长续航；③ 包里塞得下、拿得出手，要轻要好看。</p>
+  <p><b>深层需求：</b>"降温还要好看"——颜值和是社交货币，"用了显得我会生活"。</p>
+  <p><b>最担心：</b>风小像没开、续航虚标、廉价塑料丑、按键/数显不好用。</p>
+  <p><b>竞品普遍没满足的：</b>把"电机类型/档位精细度/人性化细节"讲透并实测——多数只堆"大风力"空话。</p>
+  <div class="diff">差异化机会：用「双DC无刷电机 + 五档精细风控 + 数显/折叠/防滑细节」建立技术信任，对标竞品 3 档、少提电机的弱点。</div>
+</section>
+
+<!-- 阶段2 竞品 -->
+<section>
+  <h2>二、竞品分析（真实商品详情页，3 家）</h2>
+  <p class="muted">链接均为京东商品详情页直链（item.jd.com），可点击访问。</p>
+  <table>
+    <tr><th>品牌/产品</th><th>价格</th><th>数据表现</th><th>核心卖点打法</th><th>详情页链接</th></tr>
+    <tr>
+      <td><b>几素 F2</b><br>手持风扇</td>
+      <td>约 ¥139</td>
+      <td>6000mAh / 30h 续航<br>170g 净重 · 4 色<br>1 年质保</td>
+      <td>大风力、手持桌面两用、可拆洗</td>
+      <td><a href="https://item.jd.com/10044103504123.html" target="_blank">item.jd.com/10044103504123</a></td>
+    </tr>
+    <tr>
+      <td><b>图拉斯 L20</b><br>手持/挂脖两用</td>
+      <td>¥139</td>
+      <td>200g · 3 档<br>双核大风力<br>365 天换新</td>
+      <td>双核大风力、手持挂脖两用、Type-C</td>
+      <td><a href="https://item.jd.com/10047285338875.html" target="_blank">item.jd.com/10047285338875</a></td>
+    </tr>
+    <tr>
+      <td><b>几素 FA40A</b><br>婴儿车/手持</td>
+      <td>约 ¥99</td>
+      <td>500g · 3 档<br>轻音<br>1 年质保</td>
+      <td>轻音、夹式防夹手、柔风</td>
+      <td><a href="https://item.jd.com/100046816536.html" target="_blank">item.jd.com/100046816536</a></td>
+    </tr>
+  </table>
+  <p class="muted">标杆参考：几素屏显款 Life10 S（5000mAh、智能数显、评论 1000+、好评 99%、¥139）——验证"数显+大风力"组合受市场认可。</p>
+
+  <h3>竞品普遍打法</h3>
+  <p>
+    <span class="pill">大风力口号</span><span class="pill">长续航(mAh+小时)</span><span class="pill">手持/桌面两用</span>
+    <span class="pill">多配色</span><span class="pill">质保承诺</span><span class="pill">部分数显</span>
+  </p>
+  <h3>我们的差异化机会</h3>
+  <div class="diff">
+    ① <b>电机类型</b>：竞品几乎不提"无刷"，本品讲「双DC无刷电机」做技术背书；<br>
+    ② <b>档位精细度</b>：竞品多 3 档，本品 5 档＝更精细的"风控"差异化；<br>
+    ③ <b>人性化细节</b>：竞品少堆，本品用「数显+折叠+防滑」堆信任；<br>
+    ④ <b>轻量对标</b>：图拉斯 200g、几素 170g，本品 150g 可直接做称重对比。
+  </div>
+</section>
+
+<!-- 阶段3 FBE -->
+<section>
+  <h2>三、FBE 卖点转换（8 卖点全链路）</h2>
+  <table>
+    <tr><th>卖点</th><th>Feature→Benefit（人话）</th><th>Emotion</th><th>Visual 方向</th></tr>
+    <tr><td>超级风力</td><td>风够大才爽，直吹瞬间降温</td><td>爽、解脱</td><td>发丝/纸屑被吹动特写</td></tr>
+    <tr><td>五档精细风控</td><td>五档刚刚好，风感随心调，不吹得头疼</td><td>掌控、舒适</td><td>1-5 档风感条动画</td></tr>
+    <tr><td>双DC无刷电机</td><td>双电机才猛，无刷更稳更耐用</td><td>信赖、高级</td><td>电机剖面+双机标识</td></tr>
+    <tr><td>续航狂魔</td><td>一天不充电，出门不用带线</td><td>省心、自由</td><td>早出→晚归电量刻度</td></tr>
+    <tr><td>优雅随行</td><td>随手就走，包里桌面都能放</td><td>精致、松弛</td><td>包里取出+桌面立放</td></tr>
+    <tr><td>150g超轻</td><td>轻到忘了带，比手机还轻</td><td>无负担</td><td>秤重 150g 对比图</td></tr>
+    <tr><td>4色可选</td><td>总有一色你爱，四色随心挑</td><td>悦己、个性</td><td>4 色拼图+命名</td></tr>
+    <tr><td>人性化细节</td><td>细节很到位，数显折叠防滑</td><td>被照顾</td><td>数显屏/折叠扣/防滑垫</td></tr>
+  </table>
+  <p class="muted">注：续航具体时长、4 色色名、风力量化值需按真实产品填入，勿编造。</p>
+</section>
+
+<!-- 阶段4 逐屏 -->
+<section>
+  <h2>四、逐屏策划（12 屏 · 每屏：文案+画面+理由）</h2>
+
+  <div class="screen">
+    <span class="no">屏 1 · 首屏</span>
+    <div class="copy"><span class="main">热到想融化</span><span class="sub">风小根本没用</span>
+      <div class="aux">辅助：150g 手持 · 双无刷电机 · 5 档风控</div></div>
+    <p class="label">画面</p><p>女生通勤冒汗皱眉 + 本扇递到面前特写，背景虚化城市热浪。产品占画面 60%。</p>
+    <p class="label">设计理由</p><p>痛点开场 3 秒种草，首屏同时出现产品主体、核心场景、一句价值，符合首屏铁律。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 2 · 缺口</span>
+    <div class="copy"><span class="main">普通扇不行</span><span class="sub">风小还短命</span></div>
+    <p class="label">画面</p><p>左：普通小扇吹不动纸屑；右：本扇纸屑飞起。中间一道分隔线。</p>
+    <p class="label">设计理由</p><p>制造"必须换"的动机，为后续卖点放大铺垫，避免自说自话。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 3 · 超级风力</span>
+    <div class="copy"><span class="main">风够大才爽</span><span class="sub">直吹瞬间降温</span></div>
+    <p class="label">画面</p><p>慢镜头发丝/纸巾被吹起 + 风力数值标注（待填真实值）。</p>
+    <p class="label">设计理由</p><p>竞品红海卖点，用"实测吹动物体"对比打得更好，比口号可信。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 4 · 双DC无刷电机</span>
+    <div class="copy"><span class="main">双电机才猛</span><span class="sub">无刷更稳更久</span></div>
+    <p class="label">画面</p><p>电机剖面动画，双 DC 无刷标识高亮，对比有刷电机更易发热。</p>
+    <p class="label">设计理由</p><p>竞品少提电机类型，本品用"无刷"做技术背书，建立专业信任（差异化屏）。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 5 · 五档精细风控</span>
+    <div class="copy"><span class="main">五档刚刚好</span><span class="sub">风感随心调</span></div>
+    <p class="label">画面</p><p>1-5 档风感条动画，标注每档适用场景（如 1 档办公 / 5 档户外）。</p>
+    <p class="label">设计理由</p><p>竞品多 3 档，本品 5 档＝精细化"风控"差异化，显专业（差异化屏）。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 6 · 续航狂魔</span>
+    <div class="copy"><span class="main">一天不充电</span><span class="sub">续航实测为证</span></div>
+    <p class="label">画面</p><p>早出门→晚回家电量刻度（如 8:00 满电 / 20:00 仍有 30%），标注真实时长。</p>
+    <p class="label">设计理由</p><p>打消续航焦虑（转化关键屏）；竞品有续航但需真实刻度对比才可信。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 7 · 150g超轻</span>
+    <div class="copy"><span class="main">轻到忘了带</span><span class="sub">比图拉斯更轻</span></div>
+    <p class="label">画面</p><p>电子秤显示 150g，旁放图拉斯 200g 标签做对比；放进口袋/小包。</p>
+    <p class="label">设计理由</p><p>轻量具象化，直接对标竞品重量（图拉斯 200g），把"150g"变成可感知优势。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 8 · 优雅随行</span>
+    <div class="copy"><span class="main">随手就走</span><span class="sub">包里桌面两用</span></div>
+    <p class="label">画面</p><p>女生从托特包取出扇，放桌面立起；ins 风浅色背景，显颜值。</p>
+    <p class="label">设计理由</p><p>场景+颜值加分，呼应"悦己"情绪；竞品也讲两用，本品强调优雅调性。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 9 · 4色可选</span>
+    <div class="copy"><span class="main">总有一色爱</span><span class="sub">四色随心挑</span></div>
+    <p class="label">画面</p><p>4 色产品拼图 + 色名（待填：如雾白/薄荷/樱粉/玄黑），各配场景。</p>
+    <p class="label">设计理由</p><p>降低选择成本，制造"总有一款适合我"；竞品几素也 4 色，需用色名和场景区分。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 10 · 人性化细节</span>
+    <div class="copy"><span class="main">细节很到位</span><span class="sub">数显折叠防滑</span></div>
+    <p class="label">画面</p><p>三宫格：数显屏电量 / 折叠卡扣 / 底部防滑垫，逐一放大。</p>
+    <p class="label">设计理由</p><p>竞品少堆细节，本品用"数显+折叠+防滑"堆信任（差异化屏），临门一脚前加分。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 11 · 人群场景</span>
+    <div class="copy"><span class="main">谁该带走它</span><span class="sub">通勤学生户外</span></div>
+    <p class="label">画面</p><p>三人群拼图：地铁通勤族 / 教室学生 / 户外露营者，各配使用场景。</p>
+    <p class="label">设计理由</p><p>对号入座，扩大受众面，让不同人看到"这扇适合我"。</p>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 12 · 行动号召</span>
+    <div class="copy"><span class="main">现在就带走</span><span class="sub">质保一年无忧</span></div>
+    <p class="label">画面</p><p>规格速览（150g/5档/双无刷/续航待填）+ 套装（扇+挂绳+线）+ 倒计时优惠标签。</p>
+    <p class="label">设计理由</p><p>临门一脚，用质保和套装降低决策风险，推动下单。</p>
+  </div>
+</section>
+
+<!-- 阶段5 视觉 -->
+<section>
+  <h2>五、整体视觉方向</h2>
+  <p><b>配色：</b>科技深灰 <span style="font-family:monospace">#2B2F33</span> 为主，点缀蓝 <span style="font-family:monospace">#3A7BD5</span> / 橙 <span style="font-family:monospace">#FF7A45</span>；风扇本身可走清新浅色（白/薄荷）。</p>
+  <p><b>摄影：</b>产品特写（电机/数显/按键）+ 场景实拍（通勤/教室/户外）+ 参数对比图（称重/电量刻度/风力）。</p>
+  <p><b>字体：</b>标题用无衬线中黑，参数（150g / 5 档 / mAh）粗体放大，一眼可读。</p>
+  <p><b>整体调性：</b>科技 · 可靠 · 清晰。</p>
+  <p><b>避免：</b>虚假参数大字报、廉价塑料感、过度炫酷太空感。</p>
+</section>
+
+<!-- 广告法 -->
+<section>
+  <h2>六、广告法合规提示（小家电红线）</h2>
+  <div class="warn">
+    • 参数真实：风力、续航、重量、档位须有依据，禁止虚标。<br>
+    • 风扇<b>禁止</b>用"制冷 / 冰感"暗示降温（只是吹风）；"静音"应写"低噪"，不写绝对静音。<br>
+    • 绝对化禁用："最 / 第一 / 全能 / 100% 安全"等不得出现。<br>
+    • 对比竞品不指名道姓贬低（可用"普通风扇"泛称）。
+  </div>
+</section>
+
+<div class="foot">手持小风扇详情页策划方案 · 基于用户 8 卖点 + 3 家京东真实竞品详情页 · 2026-07-28</div>
+
+</div>
+</body>
+</html>
