@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>云柔感纸面巾 · 详情页策划</title>
+<style>
+  :root{
+    --cloud:#F5F7FA; --pink:#F6D9D6; --blue:#D6E8F0; --ink:#3A3F47;
+    --muted:#7A828C; --line:#E7E2DA; --accent:#C98B86; --borrow:#7FA8C9;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--cloud);line-height:1.7}
+  .wrap{max-width:960px;margin:0 auto;padding:32px 28px 64px}
+  header{background:linear-gradient(135deg,var(--cloud),var(--pink));border-radius:18px;padding:34px 32px;margin-bottom:26px}
+  header h1{font-size:30px;letter-spacing:1px}
+  header .sub{color:var(--muted);margin-top:8px;font-size:15px}
+  .tag{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;padding:3px 12px;font-size:12px;color:var(--muted);margin:10px 8px 0 0}
+  section{background:#fff;border-radius:16px;padding:26px 28px;margin-bottom:20px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+  h2{font-size:21px;border-left:5px solid var(--accent);padding-left:12px;margin-bottom:16px}
+  h3{font-size:16px;color:var(--accent);margin:18px 0 8px}
+  p,li{font-size:14.5px;color:#4a4f57}
+  .muted{color:var(--muted);font-size:13px}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:var(--cloud);color:var(--ink);font-weight:600}
+  .screen{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0;background:#FCFBF9}
+  .screen .no{display:inline-block;background:var(--accent);color:#fff;border-radius:8px;padding:2px 10px;font-size:13px;font-weight:600;margin-bottom:8px}
+  .kv{margin:6px 0}
+  .kv b{display:inline-block;min-width:64px;color:var(--muted);font-weight:600}
+  .borrow{background:#EAF1F7;border-left:4px solid var(--borrow);border-radius:0 10px 10px 0;padding:10px 14px;margin:10px 0;font-size:13.5px}
+  .borrow .lab{color:var(--borrow);font-weight:700}
+  .fbe{border:1px dashed var(--line);border-radius:10px;padding:12px 16px;margin:10px 0}
+  .fbe .x{color:#C0564F;text-decoration:line-through;font-size:13px}
+  .fbe .o{color:#3E7D4F;font-weight:600}
+  .warn{background:#FBF3E0;border-left:4px solid #D9A441;border-radius:0 10px 10px 0;padding:10px 14px;margin:8px 0;font-size:13px}
+  .grid{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--cloud);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px;flex:1;min-width:140px}
+  .reason{background:#F4F6F8;border-radius:8px;padding:9px 12px;margin-top:8px;font-size:13px;color:#5a626b}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>云柔感纸面巾 · 详情页策划</h1>
+  <div class="sub">品类：快消日用品（纸巾 / 面巾纸）｜框架：日用品画像 + 弹性逐屏｜卖点：100%原生木浆 · 食品级保湿因子 · 温和无刺激 · 呵护敏感肌</div>
+  <div>
+    <span class="tag">原生木浆</span><span class="tag">食品级保湿</span><span class="tag">温和无刺激</span>
+    <span class="tag">敏感肌</span><span class="tag">高频复购</span>
+  </div>
+</header>
+
+<!-- 一、品类与市场定位 -->
+<section>
+  <h2>一、品类与市场定位</h2>
+  <p>纸巾（面巾纸/抽纸）是<strong>快消日用品（FMCG）</strong>，和「日用品」画像里的耐用品（浴桶/梳子）逻辑不同：</p>
+  <table>
+    <tr><th>维度</th><th>耐用品（浴桶/梳子）</th><th>纸巾（本品）</th></tr>
+    <tr><td>复购</td><td>低，首单转化极重</td><td><b>极高，靠复购+囤货</b></td></tr>
+    <tr><td>客单</td><td>中高（几十~上百）</td><td>低（单包几元，整箱几十）</td></tr>
+    <tr><td>决策</td><td>看"是不是真能解决痛点"</td><td>看"柔软/安全/性价比"，低决策成本</td></tr>
+    <tr><td>信任核心</td><td>材质安全+真实演示</td><td><b>原料纯净（原生木浆/无添加）+ 触感柔软 + 安全背书</b></td></tr>
+    <tr><td>详情页目标</td><td>一眼种草→演示打消顾虑</td><td>柔软亲肤一眼可感 + 安全背书 + 囤货钩子（多包/整箱）</td></tr>
+  </table>
+  <p class="muted">策划要点：纸巾是"低介入+高频"品类，详情页要在 3 秒内让人"<b>感到柔</b>"（画面/文案营造云柔感），再用"原料纯净+无添加+敏感肌适用"建立安全信任，最后用"<b>整箱囤/多包装</b>"降低决策、拉高客单。</p>
+</section>
+
+<!-- 二、消费者洞察 -->
+<section>
+  <h2>二、消费者洞察</h2>
+  <div class="grid">
+    <div class="chip"><b>画像 A：敏感肌 / 鼻炎党</b><br>18-40岁，换季鼻红、脸易泛红。怕纸硬擦红、有香精熏、荧光剂长期用不安。</div>
+    <div class="chip"><b>画像 B：精致宝妈</b><br>25-38岁，给宝宝擦嘴擦脸。要"宝宝能用"的安全级，柔软不伤嫩肤。</div>
+    <div class="chip"><b>画像 C：品质自用党</b><br>学生/上班族，日常擦手擦桌。要柔软不掉屑、性价比、颜值出片。</div>
+  </div>
+  <h3>需求 × 担心 对照</h3>
+  <table>
+    <tr><th>需求</th><th>担心</th><th>��情页要回答</th></tr>
+    <tr><td>柔软亲肤</td><td>纸硬擦红、掉屑粘脸</td><td>"摸起来/擦起来真的柔吗？有微距/对比吗？"</td></tr>
+    <tr><td>安全无刺激</td><td>荧光剂、香精、回收浆</td><td>"什么原料？有检测吗？宝宝/敏感肌能用吗？"</td></tr>
+    <tr><td>润不拉皮</td><td>干硬纸擦鼻子越擦越红</td><td>"有保湿感吗？擦鼻涕也不红？"</td></tr>
+    <tr><td>结实好用</td><td>一擦就破、湿水烂</td><td>"湿水不易破吗？不掉屑吗？"</td></tr>
+    <tr><td>划算囤货</td><td>贵、不耐用</td><td>"几包？整箱价？单张成本？"</td></tr>
+  </table>
+</section>
+
+<!-- 三、竞品分析 -->
+<section>
+  <h2>三、竞品分析（真实链接）</h2>
+  <table>
+    <tr><th>品牌/产品</th><th>定价/数据</th><th>主打卖点</th><th>直链</th></tr>
+    <tr><td>洁柔 Face 软抽</td><td>约¥30-40/36包</td><td>3层100抽·立体压花·软抽亲肤</td><td><a href="https://item.jd.com/100066056376.html">item.jd.com/100066056376</a></td></tr>
+    <tr><td>清风 原木纯品</td><td>约¥40/箱</td><td>3层120抽·100%原生木浆·无荧光剂·母婴可用</td><td><a href="https://item.jd.com/100069488563.html">item.jd.com/100069488563</a></td></tr>
+    <tr><td>维达 超韧</td><td>约¥47/箱</td><td>3层150抽·100%原生木浆·湿水不易破</td><td><a href="https://item.jd.com/100016735386.html">item.jd.com/100016735386</a></td></tr>
+    <tr><td>心相印 茶语</td><td>约¥50</td><td>200抽·无荧光剂·淡淡茶香</td><td><a href="https://detail.tmall.com/item.htm?id=521622305934">detail.tmall.com/id=521622305934</a></td></tr>
+    <tr><td>babycare 雪柔乳霜纸（标杆）</td><td>约¥90/24包</td><td>4层·乳霜保湿·敏感肌/婴儿可用（聚合页非直链）</td><td>链接待补充（仅聚合页）</td></tr>
+  </table>
+  <h3>竞品"普遍做法"</h3>
+  <p>① 都喊"100%原生木浆/无荧光剂"做安全背书；② 维达打"湿水不易破"功能牌；③ 洁柔用"立体压花"讲柔软；④ 心相印用茶香做香型差异化；⑤ 高端线（babycare）打"乳霜保湿+敏感肌"。<b>但少有人把"食品级保湿因子 + 敏感肌呵护"做成核心主题</b>——乳霜纸多在高端线，平价面巾纸几乎不讲"保湿/不拉皮"。</p>
+  <h3>我们的"差异化机会"</h3>
+  <p>本品"食品级保湿因子"是<strong>平价面巾纸里的稀缺卖点</strong>——直接对标 babycare 乳霜纸的"润"体验，但价格带更低。把"云柔感 + 食品级保湿 + 呵护敏感肌"三位一体做成主题，在平价带里形成"擦鼻子也不红"的独特定位，避开和维达拼"韧"、和洁柔拼"压花"的红海。</p>
+</section>
+
+<!-- 四、FBE 卖点转换 -->
+<section>
+  <h2>四、FBE 卖点转换（4 核心卖点）</h2>
+
+  <div class="fbe">
+    <h3>① 100%原生木浆</h3>
+    <p><b>Feature：</b>100%原生木浆，非回收浆。<br>
+    <b>Consumer Truth：</b>怕纸巾掺回收浆、有荧光剂，擦嘴擦脸不安全。<br>
+    <b>Benefit（人话）：</b><span class="x">100%原生木浆</span> → <span class="o">每张都来自新木浆，擦嘴擦脸都安心，宝宝也能用</span><br>
+    <b>Emotion：</b>纯净、安心　<b>Visual：</b>木浆原料特写 + 回收浆(暗黄)vs本品(洁白)对比 + 原料检测报告</p>
+  </div>
+
+  <div class="fbe">
+    <h3>② 食品级保湿因子</h3>
+    <p><b>Feature：</b>添加食品级保湿因子，纸面带润感。<br>
+    <b>Consumer Truth：</b>普通纸干硬，擦鼻子擦红了、敏感肌越擦越痒。<br>
+    <b>Benefit（人话）：</b><span class="x">添加保湿因子</span> → <span class="o">擦鼻涕也不红，像沾了层润，敏感鼻也能天天用</span><br>
+    <b>Emotion：</b>温柔、被呵护　<b>Visual：</b>纸面润泽微距 + 鼻子擦试前后(红→不红)对比 + 保湿因子示意</p>
+  </div>
+
+  <div class="fbe">
+    <h3>③ 温和无刺激</h3>
+    <p><b>Feature：</b>无香精、无荧光剂、无刺激添加（结合借鉴"无荧光剂"）。<br>
+    <b>Consumer Truth：</b>香味纸巾熏得慌，荧光剂怕长期用。<br>
+    <b>Benefit（人话）：</b><span class="x">温和无刺激</span> → <span class="o">没香味没荧光剂，凑近闻也安心，敏感肌不怕</span><br>
+    <b>Emotion：</b>干净、安心　<b>Visual：</b>"无添加"标签特写 + 紫外灯下不变色演示 + 裸脸凑近纸</p>
+  </div>
+
+  <div class="fbe">
+    <h3>④ 呵护敏感肌</h3>
+    <p><b>Feature：</b>通过敏感肌适用测试 / 母婴可用（结合借鉴"母婴可用"）。<br>
+    <b>Consumer Truth：</b>敏感肌/宝妈怕纸巾诱发泛红。<br>
+    <b>Benefit（人话）：</b><span class="x">呵护敏感肌</span> → <span class="o">敏感肌和宝宝脸都能天天擦，红痒少了</span><br>
+    <b>Emotion：</b>被照顾、专业　<b>Visual：</b>敏感肌测试报告 + 宝妈给宝宝擦脸场景 + 婴儿脸颊特写</p>
+  </div>
+</section>
+
+<!-- 五、可借鉴卖点 -->
+<section>
+  <h2>五、可借鉴卖点（市场主流做法，建议补充）</h2>
+  <p class="muted">以下来自竞品/市场主流卖点，<b>非本品原卖点</b>，建议按真实产品情况选择性补充。已在本品逐屏中标记为"借鉴"。</p>
+  <div class="borrow"><span class="lab">★ 强建议补充：</span> <b>湿水不易破</b>（维达超韧验证有效，面巾纸湿擦场景刚需）；<b>无荧光剂</b>（清风/心相印同打，强化"温和无刺激"安全背书）；<b>不掉屑/柔韧</b>（品质感，防"掉纸屑粘脸"痛点）。</div>
+  <div class="borrow"><span class="lab">○ 可选补充：</span> <b>母婴可用/婴儿可用</b>（清风已打，支撑"呵护敏感肌"）；<b>立体压花</b>（洁柔，视觉上强化柔软触感）；<b>4层加厚</b>（若产品确为4层，增价值感；3层则不打）；<b>大尺寸/加量</b>（性价比钩子）。</div>
+  <p class="muted">市场主流卖点词频（高→低）：原生木浆、湿水不易破、无荧光剂、4层加厚、母婴级/食品级、乳霜/保湿、敏感肌/婴儿可用、不掉屑、大尺寸、可湿水、无香型、可降解、干湿两用、压花立体、加香型。</p>
+</section>
+
+<!-- 六、逐屏策划 -->
+<section>
+  <h2>六、逐屏策划（弹性框架 · 11 屏）</h2>
+  <p class="muted">5 核心卖点 + 2 借鉴屏 + 铺垫屏（痛点/对比/实测/人群/规格）。每屏主文案≤10字、副文案≤12字。</p>
+
+  <div class="screen">
+    <span class="no">屏 1 · 首屏</span>
+    <div class="kv"><b>核心目标</b>痛点开场+产品+云柔感一句话</div>
+    <div class="kv"><b>主文案</b>擦脸像云托着</div>
+    <div class="kv"><b>副文案</b>云柔感不红不拉</div>
+    <div class="kv"><b>标签</b>100%原生木浆 · 食品级保湿</div>
+    <div class="kv"><b>画面</b>女生裸脸轻贴纸巾特写，柔光，背景云白渐变；产品悬浮一角</div>
+    <div class="reason">3秒营造"柔"——用裸脸贴纸+云白调性让人一眼感到软，比堆参数更抓低介入品类。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 2 · 痛点</span>
+    <div class="kv"><b>核心目标</b>放大普通纸3宗罪，制造缺口</div>
+    <div class="kv"><b>主文案</b>普通纸三宗罪</div>
+    <div class="kv"><b>副文案</b>硬·掉屑·擦就红</div>
+    <div class="kv"><b>画面</b>三格对比：硬纸擦红鼻 / 掉屑粘脸 / 荧光剂变色；右侧本品柔白</div>
+    <div class="reason">先共情再给方案，让敏感肌/宝妈对号入座"这就是我用的纸"。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 3 · 卖点①</span>
+    <div class="kv"><b>核心目标</b>原料纯净信任（原生木浆）</div>
+    <div class="kv"><b>主文案</b>新木浆才安心</div>
+    <div class="kv"><b>副文案</b>非回收·擦嘴也行</div>
+    <div class="kv"><b>画面</b>木浆纤维微距 + 回收浆(暗黄)vs本品(洁白)并排 + 原料检测标</div>
+    <div class="reason">原料是纸巾信任地基；"非回收"直击安全焦虑，呼应竞品普遍打法但更直白。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 4 · 卖点②（核心）</span>
+    <div class="kv"><b>核心目标</b>放大差异化"食品级保湿因子"</div>
+    <div class="kv"><b>主文案</b>擦鼻也不红</div>
+    <div class="kv"><b>副文案</b>食品级润不拉皮</div>
+    <div class="kv"><b>标签</b>对标乳霜纸·平价带</div>
+    <div class="kv"><b>画面</b>纸面润泽微距(有水润光泽) + 鼻子擦试前后对比(红→不红) + 保湿因子分子示意</div>
+    <div class="reason">本品最强差异点——把"润"体验视觉化，对标 babycare 乳霜纸但卡平价带，避开红海。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 5 · 卖点③</span>
+    <div class="kv"><b>核心目标</b>安全背书（无刺激+无荧光剂·借鉴）</div>
+    <div class="kv"><b>主文案</b>无香无荧光剂</div>
+    <div class="kv"><b>副文案</b>凑近闻也安心</div>
+    <div class="kv"><b>画面</b>"无添加"标签墙 + 紫外灯下本品不变色演示 + 裸脸凑近深呼吸</div>
+    <div class="reason">借鉴竞品"无荧光剂"强化安全；"凑近闻"把抽象安全变成可感知动作。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 6 · 卖点④</span>
+    <div class="kv"><b>核心目标</b>敏感肌/母婴适用（借鉴母婴可用）</div>
+    <div class="kv"><b>主文案</b>敏感肌能用</div>
+    <div class="kv"><b>副文案</b>宝宝脸也放心</div>
+    <div class="kv"><b>画面</b>敏感肌测试报告特写 + 宝妈轻擦宝宝脸颊 + 婴儿笑脸特写</div>
+    <div class="reason">把"呵护敏感肌"落到"母婴可用"具体场景，借清风已验证的安全心智。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 7 · 借鉴卖点</span>
+    <div class="kv"><b>核心目标</b>功能刚需（湿水不易破·借鉴）</div>
+    <div class="kv"><b>主文案</b>湿水也不破</div>
+    <div class="kv"><b>副文案</b>擦汗擦涕都行</div>
+    <div class="kv"><b>标签</b>借鉴维达超韧打法</div>
+    <div class="kv"><b>画面</b>沾湿纸巾拉伸特写 vs 普通纸湿烂对比 + 擦汗场景</div>
+    <div class="reason">维达验证"湿水不易破"是强功能钩子；补上本品湿用场景，覆盖鼻炎/出汗人群。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 8 · 借鉴卖点</span>
+    <div class="kv"><b>核心目标</b>品质感（不掉屑·借鉴）</div>
+    <div class="kv"><b>主文案</b>撕开不掉屑</div>
+    <div class="kv"><b>副文案</b>柔韧不粘脸</div>
+    <div class="kv"><b>画面</b>抽纸慢动作特写(无碎屑飞散) + 脸颊轻擦无残留</div>
+    <div class="reason">"掉屑粘脸"是纸巾高频吐槽；用慢动作证明柔韧，消解品质顾虑。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 9 · 实测对比（转化关键屏）</span>
+    <div class="kv"><b>核心目标</b>四维实测打消最后顾虑</div>
+    <div class="kv"><b>主文案</b>四测见真柔</div>
+    <div class="kv"><b>副文案</b>拉·湿·荧光·掉屑</div>
+    <div class="kv"><b>画面</b>四宫格：拉伸不断 / 湿水不破 / 紫外不变色 / 抽纸无屑</div>
+    <div class="reason">纸巾是"眼见为实"品类；四测合一给足证据，是下单前最后推手。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 10 · 人群场景</span>
+    <div class="kv"><b>核心目标</b>对号入座，扩使用场景</div>
+    <div class="kv"><b>主文案</b>谁都该换它</div>
+    <div class="kv"><b>副文案</b>敏肌·宝妈·日常</div>
+    <div class="kv"><b>画面</b>三拼图：换季鼻炎党 / 宝妈给宝宝擦嘴 / 办公桌随手抽</div>
+    <div class="reason">把"敏感肌专属"扩到"全家日常"，拉高使用频次与囤货理由。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">屏 11 · 规格 + CTA</span>
+    <div class="kv"><b>核心目标</b>规格透明 + 囤货钩子 + 行动号召</div>
+    <div class="kv"><b>主文案</b>整箱囤更省</div>
+    <div class="kv"><b>副文案</b>多包装更划算</div>
+    <div class="kv"><b>标签</b>层数/抽数/包数待填 · 优惠待填</div>
+    <div class="kv"><b>画面</b>整箱堆头(云白调) + 单包特写(压花/logo) + 价格标签</div>
+    <div class="reason">低频决策靠"囤货划算"拉客单；规格透明降低最后犹豫。占位数据待真实填充。</div>
+  </div>
+</section>
+
+<!-- 七、视觉方向 -->
+<section>
+  <h2>七、整体视觉方向</h2>
+  <table>
+    <tr><th>维度</th><th>方案</th><th>商业理由</th></tr>
+    <tr><td>配色</td><td>云白 #F5F7FA + 浅粉 #F6D9D6 + 浅蓝 #D6E8F0，柔光渐变</td><td>"云柔感"视觉化，干净温柔，平价带也显高级</td></tr>
+    <tr><td>摄影</td><td>微距纸纹/润泽特写 + 裸脸贴纸场景 + 四宫格实测 + 整箱堆头</td><td>纸巾靠"看得见柔"和"实测"建立信任</td></tr>
+    <tr><td>字体</td><td>干净无衬线，卖点词粗体放大（原生木浆/保湿/敏感肌）</td><td>低介入品类，关键词一眼扫到</td></tr>
+    <tr><td>调性</td><td>实用、温柔、安心（区别于零食诱人、洗护专业）</td><td>贴合敏感肌/母婴人群情绪</td></tr>
+  </table>
+</section>
+
+<!-- 八、广告法合规 -->
+<section>
+  <h2>八、广告法合规提示</h2>
+  <div class="warn"><b>食品级保湿因子：</b>"食品级"仅指该保湿成分为食品级原料，<b>禁止说"可食用/能吃/入口无害"</b>；需有成分依据支撑。</div>
+  <div class="warn"><b>呵护敏感肌 / 母婴可用：</b>可说"适用/温和不刺激"，<b>禁止说"治疗/改善/修复敏感肌""医用级"</b>等医疗宣称；"婴儿可用"需有适用依据，不写绝对化。</div>
+  <div class="warn"><b>100%原生木浆：</b>需有原料证明（非回收浆），不写"最纯净"。</div>
+  <div class="warn"><b>无荧光剂 / 无添加：</b>需检测支持；不写"最安全/零刺激"。</div>
+  <div class="warn"><b>通用红线：</b>不用"最/第一/顶级/100%/全能"；借鉴卖点（湿水不易破/不掉屑）须真实，不夸大。</div>
+</section>
+
+<p class="muted" style="text-align:center;margin-top:8px">— 云柔感纸面巾详情页策划 · 框架：日用品画像 + 弹性逐屏 —</p>
+
+</div>
+</body>
+</html>

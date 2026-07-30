@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吸盘式PPSU吸汤碗 · 详情页策划</title>
+<style>
+  :root{
+    --bg:#FBF8F4; --card:#FFFFFF; --ink:#2B2B2B; --sub:#6B6B6B;
+    --line:#ECE6DE; --pink:#F6D9D6; --blue:#D6E8F0; --mint:#DCEFE6;
+    --accent:#E98B7B; --accent2:#5B8FB0; --warn:#C0392B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;padding:32px 16px}
+  .wrap{max-width:900px;margin:0 auto}
+  header{background:linear-gradient(135deg,var(--pink),var(--blue));border-radius:20px;padding:36px 32px;margin-bottom:24px;color:#3a2f2f}
+  header .tag{display:inline-block;background:rgba(255,255,255,.7);color:#7a5a5a;font-size:13px;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+  header h1{font-size:30px;letter-spacing:1px;margin-bottom:8px}
+  header p{font-size:15px;color:#5a4a4a;max-width:640px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin-bottom:20px}
+  h2{font-size:21px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+  h2 .num{background:var(--accent);color:#fff;width:30px;height:30px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+  h3{font-size:16px;margin:18px 0 8px;color:var(--accent2)}
+  p,li{font-size:14.5px;color:var(--ink)}
+  .muted{color:var(--sub);font-size:13.5px}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:#FAF4EE;color:#5a4a4a;font-weight:600}
+  .pill{display:inline-block;background:var(--mint);color:#2f6b4f;font-size:12px;padding:2px 9px;border-radius:999px;margin:2px 3px 2px 0}
+  .pill.blue{background:var(--blue);color:#2f5a72}
+  .pill.warn{background:#FBE3DF;color:var(--warn)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:12px 0}
+  .box{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#FCFAF7}
+  .box b{color:var(--accent2)}
+  /* 逐屏卡片 */
+  .screen{border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:14px 0;background:#FCFAF7}
+  .screen .top{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+  .screen .idx{background:var(--accent2);color:#fff;font-size:13px;padding:3px 10px;border-radius:8px;flex:none}
+  .screen h4{font-size:17px}
+  .copy{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}
+  .main-copy{background:var(--accent);color:#fff;font-size:19px;font-weight:700;padding:6px 16px;border-radius:10px;letter-spacing:1px}
+  .sub-copy{background:#F3E7E3;color:#8a5a52;font-size:14px;padding:5px 14px;border-radius:10px}
+  .row{display:grid;grid-template-columns:84px 1fr;gap:8px;margin:6px 0;font-size:14px}
+  .row .k{color:var(--sub);font-weight:600}
+  .reason{background:#F4F8FA;border-left:3px solid var(--accent2);padding:10px 14px;border-radius:0 8px 8px 0;margin-top:10px;font-size:13.8px;color:#3a4a55}
+  .fbe{border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;background:#fff}
+  .fbe .old{color:var(--warn);text-decoration:line-through;opacity:.8}
+  .fbe .new{color:#2f6b4f;font-weight:600}
+  .warnbox{background:#FBEDEA;border:1px solid #F2C9C0;border-radius:12px;padding:16px 18px;margin-top:8px}
+  .warnbox li{margin:5px 0;color:#7a3a30}
+  footer{text-align:center;color:var(--sub);font-size:12.5px;margin-top:30px}
+  .link{color:var(--accent2);word-break:break-all}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="tag">品类：日用品 · 母婴喂哺餐具（母婴小物）</span>
+  <h1>吸盘式 PPSU 吸汤碗 · 详情页策划</h1>
+  <p>核心策略：把"稳（超大吸盘）、分（分隔不串味）、防洒（14°内扣）、耐用（加厚不弯）"做成差异化突破口——竞品都在讲保温/吸管/PPSU材质，少有人把"吸得牢 + 不洒不翻"这套防翻防洒逻辑讲透。</p>
+</header>
+
+<!-- 一、消费者洞察 -->
+<section>
+  <h2><span class="num">1</span>消费者洞察</h2>
+  <div class="box">
+    <b>核心决策者：妈妈（25–40 岁，负责宝宝喂哺采购）</b>
+    <p class="muted" style="margin-top:6px">使用者是 6 月+ 自主进食期宝宝。妈妈最在意：材质安全（可入口级、无异味）、设计省心（宝宝不抗拒、不手忙脚乱）、好打理。深层需求是"我选的东西不会伤到宝宝，也别让我喂饭时兵荒马乱"。</p>
+  </div>
+  <h3>需求 × 担心 对照</h3>
+  <table>
+    <tr><th>核心需求</th><th>对应担心</th><th>详情页要回答</th></tr>
+    <tr><td>吸得牢、不翻</td><td>宝宝一扒就翻、热汤洒一身</td><td>"吸盘够大够牢吗？宝宝扒得翻吗？"</td></tr>
+    <tr><td>材质安全</td><td>回收料异味、BPA 有毒</td><td>"什么材质？食品级吗？宝宝啃咬安全吗？"</td></tr>
+    <tr><td>不串味、好喂</td><td>汤饭混一起、舀汤洒</td><td>"能分开吗？盘口防洒吗？"</td></tr>
+    <tr><td>好拿耐用</td><td>薄碗一捏瘪、端汤晃</td><td>"单手端稳吗？会变形吗？"</td></tr>
+  </table>
+  <p class="muted">日用品是<strong>耐用品、复购低</strong> → 首单转化权重最高；信任靠"材质安全 + 真实演示（吸盘吸附、不翻、不洒）"两根支柱。</p>
+</section>
+
+<!-- 二、竞品分析 -->
+<section>
+  <h2><span class="num">2</span>竞品分析（真实商品链接）</h2>
+  <table>
+    <tr><th>品牌 / 产品</th><th>价格</th><th>数据</th><th>主打卖点</th><th>链接</th></tr>
+    <tr>
+      <td><b>世喜</b> 注水保温吸盘碗（PPSU内碗·吸汤）</td>
+      <td>¥175.75</td><td>20万+评价 / 99%</td>
+      <td>316不锈钢+PPSU双内胆真空保温、防摔</td>
+      <td><a class="link" href="https://item.jd.com/100059241706.html" target="_blank">item.jd.com/100059241706</a></td>
+    </tr>
+    <tr>
+      <td><b>COOKSS</b> 婴儿吸盘碗（PPSU内胆）</td>
+      <td>¥46.07</td><td>20万+评价 / 96%</td>
+      <td>高性价比 PPSU 内胆、注水恒温</td>
+      <td><a class="link" href="https://item.jd.com/100373972270.html" target="_blank">item.jd.com/100373972270</a></td>
+    </tr>
+    <tr>
+      <td><b>可优比 KUB</b> PPSU鹰嘴吸管碗</td>
+      <td>¥36.8</td><td>2万+评价 / 98%</td>
+      <td>PPSU 鹰嘴吸管、主攻自主进食</td>
+      <td><a class="link" href="https://item.jd.com/100295807244.html" target="_blank">item.jd.com/100295807244</a></td>
+    </tr>
+    <tr>
+      <td><b>运智贝</b> 吸盘碗三件套（PP）</td>
+      <td>待补充</td><td>评价数待抓</td>
+      <td>带盖吸盘碗+感温软勺三件套、入门性价比</td>
+      <td><a class="link" href="https://detail.tmall.com/item.htm?id=523215515310" target="_blank">detail.tmall.com/id=523215515310</a></td>
+    </tr>
+    <tr>
+      <td><b>b.box</b> 三合一吸管碗（PP）</td>
+      <td>约¥60.7</td><td>评价数待抓</td>
+      <td>澳洲品牌、三合一吸管碗+零食格、多功能</td>
+      <td><a class="link" href="https://detail.tmall.com/item.htm?id=620891573836" target="_blank">detail.tmall.com/id=620891573836</a></td>
+    </tr>
+  </table>
+  <h3>竞品普遍做法</h3>
+  <p>① 主讲故事集中在 <span class="pill">注水保温 / 恒温</span> <span class="pill">PPSU 内胆材质</span> <span class="pill">吸管喝汤 / 自主进食</span> <span class="pill">三件套 / 多功能</span>；② 视觉多为浅柔母婴色或透明琥珀质感；③ 吸盘普遍只作为"防摔"一句话带过，<strong>很少把吸盘大小、吸力、防翻做实测演示</strong>。</p>
+  <h3>我们的差异化机会</h3>
+  <div class="grid">
+    <div class="box"><b>超大吸盘</b><br>竞品吸盘小、只说"防摔" → 本品讲"吸盘格外大、宝宝两只手扒不翻"，并做吸附实测。</div>
+    <div class="box"><b>分隔不串味</b><br>竞品多单碗或仅零食格 → 本品汤饭分区，"不串味"是喂饭刚需角度。</div>
+    <div class="box"><b>14°内扣防洒</b><br>几乎无人提盘口防洒 → 本品用内扣设计解决"舀汤洒一身"。</div>
+    <div class="box"><b>加厚不弯</b><br>薄碗一捏瘪是隐性痛点 → 本品单手端满碗汤不变形，做对比演示。</div>
+  </div>
+</section>
+
+<!-- 三、FBE 卖点转换 -->
+<section>
+  <h2><span class="num">3</span>FBE 卖点转换</h2>
+
+  <div class="fbe">
+    <h4>卖点① 优选硅胶（吸盘材质）</h4>
+    <div class="row"><span class="k">Feature</span><span>食品级液态硅胶吸盘，柔软高弹</span></div>
+    <div class="row"><span class="k">Truth</span><span>妈妈怕吸盘是回收料有异味、宝宝啃咬不安全</span></div>
+    <div class="row"><span class="k">Benefit</span><span><span class="old">优质硅胶吸盘</span> → <span class="new">吸盘是食品级硅胶，宝宝啃着玩也放心，没异味</span></span></div>
+    <div class="row"><span class="k">Emotion</span><span>安心、敢让宝宝碰</span></div>
+  </div>
+
+  <div class="fbe">
+    <h4>卖点② 超大吸盘</h4>
+    <div class="row"><span class="k">Feature</span><span>加大吸盘面，真空吸附桌面 / 餐椅</span></div>
+    <div class="row"><span class="k">Truth</span><span>普通吸盘小，宝宝一扒就翻，汤洒一身</span></div>
+    <div class="row"><span class="k">Benefit</span><span><span class="old">强力吸盘</span> → <span class="new">吸盘格外大，宝宝两只手扒都扒不翻，汤稳稳的</span></span></div>
+    <div class="row"><span class="k">Emotion</span><span>省心、不手忙脚乱</span></div>
+  </div>
+
+  <div class="fbe">
+    <h4>卖点③ 分隔不串味</h4>
+    <div class="row"><span class="k">Feature</span><span>分区设计，汤与饭 / 菜隔开</span></div>
+    <div class="row"><span class="k">Truth</span><span>混在一起串味，宝宝挑食更不爱吃</span></div>
+    <div class="row"><span class="k">Benefit</span><span><span class="old">分格吸盘碗</span> → <span class="new">汤一边饭一边，减少串味，宝宝每口都香</span></span></div>
+    <div class="row"><span class="k">Emotion</span><span>贴心、懂喂养</span></div>
+  </div>
+
+  <div class="fbe">
+    <h4>卖点④ 14°内扣盘口</h4>
+    <div class="row"><span class="k">Feature</span><span>盘口内扣 14 度，形成挡边</span></div>
+    <div class="row"><span class="k">Truth</span><span>宝宝舀汤容易洒到衣服、桌面</span></div>
+    <div class="row"><span class="k">Benefit</span><span><span class="old">防洒设计</span> → <span class="new">盘口往里收 14 度，舀汤汤汁不往外溢，少洗一件衣服</span></span></div>
+    <div class="row"><span class="k">Emotion</span><span>轻松、少麻烦</span></div>
+  </div>
+
+  <div class="fbe">
+    <h4>卖点⑤ 加厚餐盘壁单手端也不变形</h4>
+    <div class="row"><span class="k">Feature</span><span>加厚 PPSU 壁，刚性好</span></div>
+    <div class="row"><span class="k">Truth</span><span>薄碗端汤晃、一捏就瘪，烫手还变形</span></div>
+    <div class="row"><span class="k">Benefit</span><span><span class="old">加厚碗壁</span> → <span class="new">碗壁加厚，单手端一整碗汤也不弯不瘪，稳当</span></span></div>
+    <div class="row"><span class="k">Emotion</span><span>踏实、好拿</span></div>
+  </div>
+</section>
+
+<!-- 四、逐屏策划 -->
+<section>
+  <h2><span class="num">4</span>逐屏策划（10 屏 · 弹性框架）</h2>
+  <p class="muted">5 个卖点 → 10 屏（首屏 + 缺口 + 5 卖点屏 + 材质屏 + 人群屏 + 规格 CTA）。每屏只讲一件事，主文案 ≤10 字、副文案 ≤12 字。</p>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 1 屏</span><h4>首屏 · 痛点 + 产品</h4></div>
+    <div class="copy"><span class="main-copy">吸住不翻</span><span class="sub-copy">宝宝扒也不倒</span></div>
+    <div class="row"><span class="k">画面</span><span>餐椅上宝宝伸手扒碗、汤碗纹丝不动 + 产品悬浮特写；浅柔背景，3 秒看懂"这碗吸得牢"。</span></div>
+    <div class="reason">首屏直接给核心利益"吸住不翻"，不卖材质先卖结果——耐用品首单转化靠一眼种草。</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 2 屏</span><h4>缺口 · 痛点深挖</h4></div>
+    <div class="copy"><span class="main-copy">一推就翻</span><span class="sub-copy">热汤洒一身</span></div>
+    <div class="row"><span class="k">画面</span><span>普通碗被宝宝推翻、汤汁洒到衣服的"翻车"瞬间 vs 本品稳坐对比。</span></div>
+    <div class="reason">制造"必须换"的动机：先放大旧方案的痛，再引出本品解决方案。</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 3 屏</span><h4>卖点② 超大吸盘</h4></div>
+    <div class="copy"><span class="main-copy">超大吸盘</span><span class="sub-copy">宝宝扒不翻</span></div>
+    <div class="row"><span class="k">画面</span><span>宝宝双手扒碗纹丝不动；吸盘吸附餐椅 / 桌面特写，标"加大吸附面"。</span></div>
+    <div class="reason">把吸盘从"防摔一句话"升级为可视化证据，正面回应妈妈最大担心"扒得翻吗"。</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 4 屏</span><h4>卖点① 优选硅胶</h4></div>
+    <div class="copy"><span class="main-copy">食品级硅胶</span><span class="sub-copy">可入口级安全</span></div>
+    <div class="row"><span class="k">画面</span><span>硅胶透光无杂质特写 + 宝宝小手拍吸盘 + 食品级检测标签。</span></div>
+    <div class="reason">材质信任支柱：用"食品级 + 可入口级"打消回收料异味顾虑，呼应母婴安全。*</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 5 屏</span><h4>卖点③ 分隔不串味</h4></div>
+    <div class="copy"><span class="main-copy">分隔不串味</span><span class="sub-copy">汤饭各一边</span></div>
+    <div class="row"><span class="k">画面</span><span>分隔特写（汤清、饭干，界限分明）+ 宝宝吃分隔碗满足表情。</span></div>
+    <div class="reason">喂饭刚需角度：用"减少串味"替代绝对化"不串味"，既真实又戳中挑食焦虑。</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 6 屏</span><h4>卖点④ 14°内扣盘口</h4></div>
+    <div class="copy"><span class="main-copy">内扣不洒</span><span class="sub-copy">14度锁汤汁</span></div>
+    <div class="row"><span class="k">画面</span><span>汤汁沿内扣壁流回的慢动作特写 + 宝宝舀汤不洒对比（衣服干净）。</span></div>
+    <div class="reason">竞品无人在意的细节：把"14°内扣"做成防洒功能演示，少洗一件衣服是妈妈能秒懂的好处。</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 7 屏</span><h4>卖点⑤ 加厚餐盘壁</h4></div>
+    <div class="copy"><span class="main-copy">加厚不弯</span><span class="sub-copy">单手端也稳</span></div>
+    <div class="row"><span class="k">画面</span><span>单手端满碗汤不变形特写 + 薄碗一捏就瘪的对比。</span></div>
+    <div class="reason">隐性痛点显性化：单手端稳 = 妈妈一边抱娃一边喂也能拿，实用感拉满。</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 8 屏</span><h4>材质综合 · PPSU 碗体</h4></div>
+    <div class="copy"><span class="main-copy">食品级PPSU</span><span class="sub-copy">无异味耐温</span></div>
+    <div class="row"><span class="k">画面</span><span>PPSU 材质透光质感特写 + "BPA Free / 耐温区间"标注 + 检测报告角标。</span></div>
+    <div class="reason">材质信任第二支柱：碗体 PPSU 与吸盘硅胶双背书，整体"可入口级"闭环。*</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 9 屏</span><h4>人群 · 场景</h4></div>
+    <div class="copy"><span class="main-copy">学吃期宝宝</span><span class="sub-copy">外出也方便</span></div>
+    <div class="row"><span class="k">画面</span><span>多场景拼图：餐椅自主进食、老人喂饭、户外野餐吸盘吸附野餐桌。</span></div>
+    <div class="reason">对号入座：6 月+自主进食期、隔代喂养、外出就餐三类人都能代入。</div>
+  </div>
+
+  <div class="screen">
+    <div class="top"><span class="idx">第 10 屏</span><h4>规格 · 行动号召</h4></div>
+    <div class="copy"><span class="main-copy">带它回家</span><span class="sub-copy">安心喂饭</span></div>
+    <div class="row"><span class="k">画面</span><span>规格表（尺寸 / 容量 / 颜色）+ 单碗 & 套装组合 + 质保承诺 + CTA 按钮。</span></div>
+    <div class="reason">临门一脚：用"安心喂饭"收口，配套装提升客单，质保降低决策风险。</div>
+  </div>
+  <p class="muted">* 第 4、8 屏的"食品级 / 耐温 / BPA Free"等宣称须以真实检测或材质说明为依据，见下方广告法合规。</p>
+</section>
+
+<!-- 五、视觉方向 -->
+<section>
+  <h2><span class="num">5</span>整体视觉方向</h2>
+  <div class="grid">
+    <div class="box"><b>配色</b><br>浅柔母婴色：奶白 #F7F3EE / 浅粉 #F6D9D6 / 浅蓝 #D6E8F0，点缀薄荷绿。温暖不廉价，避大红大绿促销感。</div>
+    <div class="box"><b>摄影</b><br>① 真实喂饭场景（餐椅 / 户外）② 细节特写（吸盘纹理、内扣壁、加厚壁）③ 对比演示（扒不翻 / 不洒 / 不变形）。</div>
+    <div class="box"><b>调性</b><br>三个词：<b>实用 · 贴心 · 有设计感</b>。避免塑料强反光的廉价感与过度卡通幼稚。</div>
+    <div class="box"><b>字体</b><br>干净无衬线（如阿里巴巴普惠体），功能参数（14° / 加厚 / 容量）用粗体放大。</div>
+  </div>
+</section>
+
+<!-- 六、广告法合规 -->
+<section>
+  <h2><span class="num">6</span>广告法合规提示</h2>
+  <div class="warnbox">
+    <ul>
+      <li>材质宣称须有依据：写"食品级硅胶 / 食品级 PPSU"需有检测或材质说明支撑；<b>禁止</b>说"可食用""可微波炉水煮"除非确实耐温并标明温度。</li>
+      <li>吸盘吸附力：用"吸附更牢 / 不易翻"，<b>禁止</b>写"吸力最强 / 绝对不翻 / 100% 防翻"。</li>
+      <li>分隔防串味：用"减少串味 / 汤饭分开"，<b>禁止</b>写"完全不串味 / 绝对不混味"等绝对化。</li>
+      <li>14°内扣防洒：可演示"减少外溢"，<b>禁止</b>写"绝不洒 / 100% 防洒"。</li>
+      <li>适用年龄：标"6 月+ 建议"须有依据；不得暗示医疗或发育功效。</li>
+      <li>通用红线：不使用"最 / 第一 / 顶级 / 全能"等绝对化用语；对比竞品不指名道姓贬低。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  吸盘式 PPSU 吸汤碗 · 详情页策划文档（日用品 / 母婴喂哺餐具）<br>
+  竞品链接为真实商品页（京东 / 天猫）；占位数据（价格、容量、耐温区间）请按真实产品填实。
+</footer>
+
+</div>
+</body>
+</html>

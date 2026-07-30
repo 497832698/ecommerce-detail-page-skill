@@ -30,6 +30,8 @@
 | 🥩 猪肉脯 | "好肉，不需要甜来撑场面" | [查看案例](docs/preview-pork.png) |
 | 🧴 可蒂家婴童泡泡沐浴露 | "全场唯一把初生肌+专利胎脂做成主题" | [案例截图](docs/preview-coddy.png) · [完整文档](docs/example-coddy-bath.html) |
 | 📷 手持小风扇 | "全场唯一把双DC无刷电机+五档精细风控做成技术突破口" | [案例截图](docs/preview-fan.png) · [完整文档](docs/example-handheld-fan.html) |
+| 🧻 云柔感纸面巾 | "平价带里唯一把食品级保湿因子做成主题" | [完整文档](docs/example-tissue.html) |
+| 🥣 吸盘式PPSU吸汤碗 | "唯一把吸得牢+不洒不翻的防翻防洒逻辑讲透" | [完整文档](docs/example-suction-bowl.html) |
 
 每个案例都包含：竞品数据分析（附真实链接）→ FBE卖点转换 → 逐屏策划（小家电等卖点密集品类可 10+ 屏，文案 ≤ 10字 + 画面描述 + AI Prompt + 设计理由）→ 整体视觉方向。
 
@@ -42,7 +44,7 @@
     ↓
 ① 消费者分析        → 谁买？为什么买？担心什么？
     ↓
-② 竞品分析          → 搜 3-5 个真实竞品（有销量数据 + 商品链接）
+② 竞品分析          → 自动抓取 3-5 个真实竞品（有销量数据 + 商品直链，WebSearch 优先，故障时子代理兜底）
     ↓
 ③ FBE 卖点转换      → Feature → Benefit → Emotion → 画面方向
     ↓
@@ -74,6 +76,7 @@ snack-ecommerce-detail-page/
 ├── references/                       # 6 份知识库文档
 │   ├── consumer-psychology.md        # 消费者心理分析框架
 │   ├── fbe-sellpoint-model.md        # FBE 卖点转换模型 + 案例
+│   ├── competitor-research.md        # 竞品真实链接自动抓取 SOP（全品类通用，含子代理兜底）
 │   ├── detail-page-structure.md      # 6 屏结构规范 + 竞品分析框架 + 输出模板
 │   ├── visual-design-rules.md        # 色彩/字体/摄影/版式/竞品参考
 │   ├── review-standards.md           # 5 维度设计评审标准

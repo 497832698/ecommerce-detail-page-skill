@@ -128,6 +128,8 @@
 - 竞品的"普遍做法"（大家都在干什么）
 - 我们的"差异化机会"（我们可以干什么不一样的事）
 
+**自动抓取竞品链接（全品类通用）**：完整 SOP 见 `references/competitor-research.md`。默认用 WebSearch 搜真实竞品直链；若 WebSearch/WebFetch 故障，改派 general-purpose 子代理兜底检索（子代理路径通常可用），**禁止编造链接、禁止卡住不搜**。
+
 ## 逐屏策划输出模板
 
 ### 文案字数规则
