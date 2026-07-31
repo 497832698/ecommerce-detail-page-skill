@@ -129,9 +129,12 @@ snack-ecommerce-detail-page/
 **方式二：手动安装（GitHub 源码）**
 
 ```bash
-git clone https://github.com/497832698/ecommerce-detail-page-skill.git
-ln -s "$(pwd)/ecommerce-detail-page-skill/.workbuddy/skills/snack-ecommerce-detail-page" \
-      ~/.workbuddy/skills/snack-ecommerce-detail-page
+# 仓库默认分支为 main
+git clone -b main https://github.com/497832698/ecommerce-detail-page-skill.git
+# 确保技能目录存在，并软链到 WorkBuddy 技能目录（已存在则覆盖）
+mkdir -p ~/.workbuddy/skills
+ln -sf "$(pwd)/ecommerce-detail-page-skill/.workbuddy/skills/snack-ecommerce-detail-page" \
+       ~/.workbuddy/skills/snack-ecommerce-detail-page
 # 重启 WorkBuddy，对话中输入产品名+卖点即可触发
 ```
 
