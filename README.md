@@ -3,7 +3,7 @@
 > 不是 AI 自动出图工具。是一个帮设计师"想清楚再动手"的前期策划引擎。
 
 [![Skill Type](https://img.shields.io/badge/type-WorkBuddy%20Skill-1A6B8A)](https://github.com/497832698/ecommerce-detail-page-skill)
-[![Version](https://img.shields.io/badge/version-v1.0-27AE60)](https://github.com/497832698/ecommerce-detail-page-skill/releases)
+[![Version](https://img.shields.io/badge/version-v1.2.0-27AE60)](https://github.com/497832698/ecommerce-detail-page-skill/releases)
 [![Platform](https://img.shields.io/badge/platform-淘宝%20|%20天猫%20|%20京东%20|%20拼多多-e03e2d)](https://github.com/497832698/ecommerce-detail-page-skill)
 [![Phase](https://img.shields.io/badge/品类-零食🍒🍬🧀🥩%20|%20洗护🧴%20|%20日用品🪣%20|%20小家电📷-orange)](https://github.com/497832698/ecommerce-detail-page-skill)
 
@@ -20,6 +20,20 @@
 这个 Skill 把 8 年零食电商设计经验沉淀为自动化工作流，输入一个产品和卖点，输出一份可以直接拿去执行的策划文档。
 
 ---
+
+## 当前版本 v1.2.0
+
+相较 v1.0（仅零食通用框架），本版本完成多品类扩展，当前共支持以下品类策划：
+
+| 品类 | 状态 | 画像 / 说明 |
+|------|------|------------|
+| 零食（通用框架） | ✅ 通用覆盖 | 共享"妈妈买给孩子 + 年轻自用"画像，覆盖儿童零食/肉脯/果干/糖果/坚果 |
+| 🧴 洗护用品 | ✅ 专属画像 | `references/categories/wash-care.md`（含广告法合规规则） |
+| 🪣 日用品 | ✅ 专属画像 | `references/categories/daily-use.md`（母婴/居家/个护小物/配饰） |
+| 🧻 纸品 / 快消 | ✅ 框架覆盖 | 面巾纸、抽纸等，归 `daily-use.md`；案例见 `docs/example-tissue.html` |
+| 📷 小家电 | ✅ 专属画像 | `references/categories/small-appliance.md`（风扇/行车记录仪/监控摄像头，弹性逐屏） |
+
+每个品类内置：消费者画像、视觉规则、竞品特征、FBE 示例、逐屏策略差异、广告法合规红线。
 
 ## 主要功能
 
