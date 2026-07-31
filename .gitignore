@@ -1,6 +1,9 @@
 # 输出文件（策划文档HTML、截图）
 outputs/
 
+# 本地工作记忆（仅 agent 内部使用，不发布到开源仓库）
+.workbuddy/memory/
+
 # macOS
 .DS_Store
 
