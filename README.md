@@ -56,6 +56,7 @@
 | 📷 手持小风扇 | "全场唯一把双DC无刷电机+五档精细风控做成技术突破口" | [案例截图](docs/preview-fan.png) · [完整文档](docs/example-handheld-fan.html) |
 | 🧻 云柔感纸面巾 | "平价带里唯一把食品级保湿因子做成主题" | [完整文档](docs/example-tissue.html) |
 | 🥣 吸盘式PPSU吸汤碗 | "唯一把吸得牢+不洒不翻的防翻防洒逻辑讲透" | [完整文档](docs/example-suction-bowl.html) |
+| 🍼 飞鹤婴幼儿奶粉 | "唯一把100种多维营养+吸收逻辑做成科研主题" | [完整文档](docs/example-feihe-milk.html) |
 
 每个案例都包含：竞品数据分析（附真实链接）→ FBE卖点转换 → 逐屏策划（小家电等卖点密集品类可 10+ 屏，文案 ≤ 10字 + 画面描述 + AI Prompt + 设计理由）→ 整体视觉方向。
 

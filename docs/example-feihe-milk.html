@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>飞鹤奶粉 · 电商详情页策划方案</title>
+<style>
+  :root{
+    --trust:#2E5C9E; --trust-dark:#1B3A6B; --gold:#E0A03A;
+    --cream:#F7F3EE; --soft-blue:#E7F0F8; --ink:#2B2B2B; --muted:#6B7280;
+    --line:#E5E2DC; --warn:#C0392B; --warn-bg:#FCEEEC; --ok:#2E7D5B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:#fff;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 24px 64px}
+  header.hero{background:linear-gradient(135deg,var(--trust-dark),var(--trust));color:#fff;border-radius:16px;padding:34px 32px;margin-bottom:28px}
+  header.hero .tag{display:inline-block;background:rgba(255,255,255,.16);padding:4px 12px;border-radius:20px;font-size:13px;margin-bottom:14px}
+  header.hero h1{font-size:30px;font-weight:800;letter-spacing:1px}
+  header.hero .sub{margin-top:10px;opacity:.9;font-size:15px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .meta span{background:rgba(255,255,255,.12);padding:6px 14px;border-radius:8px;font-size:13px}
+  section{margin-bottom:34px}
+  h2{font-size:22px;color:var(--trust-dark);border-left:5px solid var(--gold);padding-left:12px;margin-bottom:16px}
+  h3{font-size:17px;color:var(--trust);margin:18px 0 10px}
+  p{margin:8px 0;color:#3a3a3a}
+  .note{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14px;color:#555}
+  .note b{color:var(--trust-dark)}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:var(--soft-blue);color:var(--trust-dark);font-weight:700}
+  tr:nth-child(even) td{background:#FBFAF8}
+  a{color:var(--trust);word-break:break-all}
+  .screen{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0;box-shadow:0 2px 10px rgba(30,58,107,.05)}
+  .screen .no{display:inline-block;background:var(--trust);color:#fff;font-size:13px;font-weight:700;padding:3px 11px;border-radius:20px;margin-bottom:8px}
+  .screen h4{font-size:18px;color:var(--trust-dark);margin:6px 0 12px}
+  .copy-line{display:flex;gap:10px;align-items:baseline;margin:6px 0;flex-wrap:wrap}
+  .copy-main{font-size:20px;font-weight:800;color:var(--trust-dark)}
+  .copy-sub{font-size:15px;color:var(--gold);font-weight:700}
+  .copy-tag{font-size:12px;color:var(--muted);background:var(--cream);padding:2px 9px;border-radius:6px}
+  .field{margin:10px 0}
+  .field .lab{font-weight:700;color:var(--trust);font-size:14px;display:block;margin-bottom:3px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr}}
+  .borrow{background:var(--soft-blue);border-left:4px solid var(--gold);padding:8px 12px;border-radius:0 8px 8px 0;font-size:13.5px;margin:6px 0}
+  .warn-box{background:var(--warn-bg);border:1px solid #F0C4BE;border-radius:12px;padding:16px 18px}
+  .warn-box h3{color:var(--warn);margin-top:0}
+  .warn-box li{margin:8px 0 8px 18px;font-size:14px}
+  .palette{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+  .sw{width:74px;height:74px;border-radius:10px;display:flex;align-items:flex-end;justify-content:center;font-size:11px;color:#fff;padding:6px;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.3)}
+  .footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);text-align:center}
+  code{background:var(--cream);padding:1px 6px;border-radius:5px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="tag">电商详情页策划 Skill v1.2.0 · 品类：母婴奶粉</span>
+  <h1>飞鹤奶粉 · 详情页策划方案</h1>
+  <div class="sub">输入产品 + 卖点 → 竞品分析 + FBE 卖点转换 + 弹性逐屏策划 + 视觉方向 + 广告法合规</div>
+  <div class="meta">
+    <span>产品：飞鹤星飞帆卓睿（示例段位 3 段）</span>
+    <span>用户卖点：4 项</span>
+    <span>对标竞品：5 个（真实数据）</span>
+    <span>策划日期：2026-08-07</span>
+  </div>
+</header>
+
+<div class="note">
+  <b>策划说明：</b>奶粉属母婴食品，当前 Skill 无专属画像，本方案采用<b>通用框架 + 日用品画像的母婴消费者逻辑</b>策划。婴幼儿配方乳粉广告法极严（详见第六节），所有功效/数据宣称须有依据。建议后续补充 <code>references/categories/infant-formula.md</code> 专属画像，提升精度。
+</div>
+
+<!-- 一、消费者洞察 -->
+<section>
+  <h2>一、消费者洞察（谁买 · 为什么买 · 担心什么）</h2>
+  <table>
+    <tr><th style="width:22%">维度</th><th>分析</th></tr>
+    <tr><td><b>购买者 / 使用者</b></td><td>购买者＝妈妈（25–40 岁，负责宝宝口粮决策）；使用者＝宝宝（0–3 岁为主）；影响者＝爸爸、祖辈。</td></tr>
+    <tr><td><b>购买原因 TOP3</b></td><td>① 给宝宝全面又均衡的营养 ② 好吸收、不便秘、不操心 ③ 大品牌、奶源放心、国产可信。</td></tr>
+    <tr><td><b>真正想获得</b></td><td>「看得见的营养」「放心的奶源」「好吸收的证据」「专业感＝我选得对」的安心与认可。</td></tr>
+    <tr><td><b>最担心</b></td><td>营养不够全面、宝宝吸收差/便秘、奶源不安全、配方虚标、上火。</td></tr>
+    <tr><td><b>竞品没满足的</b></td><td>多数竞品只堆成分名词，很少把「为什么适合中国宝宝 + 好吸收的证据 + 新鲜奶源」讲成一条可信故事。飞鹤的「北纬47°新鲜奶源 + 国产销量领先」是差异化切入点。</td></tr>
+  </table>
+</section>
+
+<!-- 二、竞品分析 -->
+<section>
+  <h2>二、竞品分析（真实数据 · 5 个对标）</h2>
+  <p>按 <code>competitor-research.md</code> SOP 抓取，全部为京东真实商品页（可访问）。注：以下链接为京东商品信息页（<code>jingfen.jd.com</code>），正式发布前建议替换为官方 <code>item.jd.com</code> 商品详情页直链。</p>
+  <table>
+    <tr><th>品牌 / 产品</th><th>价格(3段)</th><th>销量 / 好评</th><th>核心卖点</th><th>商品链接</th></tr>
+    <tr>
+      <td><b>飞鹤星飞帆卓睿</b><br><span style="color:var(--muted);font-size:12px">主品（示例）</span></td>
+      <td>¥298/750g</td><td>2万+ · 99%</td>
+      <td>新鲜生牛乳、专利OPO、HMO、乳铁蛋白、A2-β酪蛋白奶源</td>
+      <td><a href="https://jingfen.jd.com/detail/41XmP4Jj3TK9L7edjY54A0A6nPAzT_sweEZ0b5w0zb5GGaAk.html">京东商品页</a></td>
+    </tr>
+    <tr>
+      <td><b>爱他美 卓傲</b><br><span style="color:var(--muted);font-size:12px">进口</span></td>
+      <td>¥259/800g</td><td>500万+ · 99%</td>
+      <td>进口奶源、益生元组合（肠道友好）、清淡好溶解</td>
+      <td><a href="https://jingfen.jd.com/detail/6xXK8KobKtIbKJF0FB0ObKJFcNxl1X_3opDmbkihOYKf7Ah0v.html">京东商品页</a></td>
+    </tr>
+    <tr>
+      <td><b>君乐宝 至臻</b></td>
+      <td>¥140/800g</td><td>10万+ · 99%</td>
+      <td>A2 β-酪蛋白、OPO、CPP（促钙吸收）、高性价比</td>
+      <td><a href="https://jingfen.jd.com/detail/irGWM1lpmN0KpCtbeuInYtO0fYR4Q_3sdbW6yVNSeg7EloA0.html">京东商品页</a></td>
+    </tr>
+    <tr>
+      <td><b>美赞臣 蓝臻</b></td>
+      <td>¥309/820g</td><td>50万+ · 98%</td>
+      <td>高含量乳铁蛋白、MFGM 乳脂球膜（眼脑营养）、DHA</td>
+      <td><a href="https://jingfen.jd.com/detail/IwQNjSHBiNu3HeMcsBap3HeMcsBapQ_cIOf4YJfN3YSw3d22J.html">京东商品页</a></td>
+    </tr>
+    <tr>
+      <td><b>a2 紫白金</b><br><span style="color:var(--muted);font-size:12px">进口</span></td>
+      <td>¥213/900g</td><td>500万+ · 99%</td>
+      <td>只含 A2 型蛋白、源乳亲和、好吸收</td>
+      <td><a href="https://jingfen.jd.com/detail/qY8L25wcx3RS5E0jukspS5E28fOHP8_3m8LZY9eRHX5OMfzws.html">京东商品页</a></td>
+    </tr>
+    <tr>
+      <td><b>伊利 金领冠 珍护</b></td>
+      <td>¥244/900g</td><td>5万+ · 99%</td>
+      <td>A2 型生牛乳、三代 OPO、HMO、α+β 专利蛋白、核苷酸</td>
+      <td><a href="https://jingfen.jd.com/detail/HeQ8sVcNBMEFViqYwstIFViqYwstIQ_3BN0vNmuan88kU786c.html">京东商品页</a></td>
+    </tr>
+  </table>
+  <h3>竞品普遍做法</h3>
+  <p>① 都打「好吸收」牌，A2 蛋白 / OPO / 益生元是高频词；② 进口品牌强调「原装进口、源乳」；③ 高端线堆「乳铁蛋白 + MFGM + HMO」成分矩阵；④ 详情页多用成分名词 + 检测报告截图建立信任。</p>
+  <h3>我们的差异化机会</h3>
+  <p><b>「北纬47°新鲜生牛乳 + 国产奶粉销量领先 + 100 种成长多维营养」</b>是飞鹤独有叙事——把「新鲜奶源」做成视觉主线（竞品多讲成分、少讲奶源故事），并用「适合中国宝宝」的本土化信任替代「进口崇拜」，对妈妈群体的说服力更强。</p>
+</section>
+
+<!-- 三、FBE 卖点转换 -->
+<section>
+  <h2>三、FBE 卖点转换（用户卖点 + 可借鉴卖点）</h2>
+  <h3>用户原卖点（4 项）</h3>
+  <table>
+    <tr><th style="width:20%">卖点</th><th>Feature → Consumer Truth</th><th>Benefit（人话）</th><th>Emotion</th></tr>
+    <tr>
+      <td><b>超100种<br>成长多维营养</b></td>
+      <td>配方含 100+ 种营养素 → 妈妈怕「营养不够全面、缺钙缺维」</td>
+      <td>❌「营养全面」✅「成长要的，这一罐基本都有」</td>
+      <td>安心、周全</td>
+    </tr>
+    <tr>
+      <td><b>吸收率达93%</b></td>
+      <td>营养丰富但吸收差＝白搭 → 妈妈最怕「喝了不吸收、便秘」</td>
+      <td>❌「吸收率93%」✅「好吸收，营养不浪费」（⚠️ 见广告法）</td>
+      <td>放心、不浪费</td>
+    </tr>
+    <tr>
+      <td><b>IMP蛋白</b></td>
+      <td>特定蛋白成分 → 妈妈认「蛋白好＝体质好」</td>
+      <td>❌「含IMP蛋白」✅「加护蛋白，给成长多一层保护」（⚠️ 待核实名称）</td>
+      <td>被守护、专业</td>
+    </tr>
+    <tr>
+      <td><b>酪蛋白生牛乳</b></td>
+      <td>A2 β-酪蛋白优质生牛乳 → 妈妈认「好奶源＝好吸收、安全」</td>
+      <td>❌「酪蛋白生牛乳」✅「新鲜生牛乳直供，亲和好吸收」</td>
+      <td>新鲜、可信</td>
+    </tr>
+  </table>
+
+  <h3>可借鉴的竞品卖点（用户授权「其他产品有可借鉴的也加上」）</h3>
+  <div class="borrow"><b>【借鉴·君乐宝至臻】</b> CPP 酪蛋白磷酸肽——促钙铁锌吸收，可补强「吸收」叙事，标注来源。</div>
+  <div class="borrow"><b>【借鉴·美赞臣蓝臻】</b> 乳铁蛋白 + MFGM 乳脂球膜——补强「保护力 + 眼脑营养」屏，标注来源。</div>
+  <div class="borrow"><b>【借鉴·爱他美卓傲】</b> 益生元组合——补强「肠道舒服」屏，标注来源。</div>
+  <div class="borrow"><b>【借鉴·a2 / 金领冠】</b> A2 型蛋白「亲和好吸收」话术——与本品「酪蛋白生牛乳」呼应，强化吸收主线。</div>
+  <p class="note" style="margin-top:10px">借鉴卖点需在页面明确标注「借鉴/行业通用成分」，与本品原卖点区分；且所有成分须以本品实际配方表为准，不得冒用竞品独有专利表述。</p>
+</section>
+
+<!-- 四、逐屏策划 -->
+<section>
+  <h2>四、逐屏策划（弹性框架 · 12 屏）</h2>
+  <p style="font-size:13.5px;color:var(--muted)">每屏：主文案 ≤10 字 · 副文案 ≤12 字 · 含画面描述 + 设计理由。屏数依「用户卖点 + 竞品真实详情」动态定为 12 屏。</p>
+
+  <div class="screen">
+    <span class="no">第 1 屏 · 首屏</span>
+    <h4>产品大图 + 核心利益</h4>
+    <div class="copy-line"><span class="copy-main">新鲜好吸收</span><span class="copy-sub">飞鹤星飞帆卓睿</span><span class="copy-tag">国产奶粉销量领先</span></div>
+    <div class="field"><span class="lab">画面描述</span>罐体 3/4 立体 + 一滴鲜奶飞溅 + 宝宝满足侧脸（不露全脸更合规）。暖光、浅蓝背景。AI Prompt：明亮母婴风，飞鹤奶粉罐，飞溅牛奶，柔和自然光，clean composition。</div>
+    <div class="field"><span class="lab">设计理由</span>首屏先给「新鲜 + 好吸收」两个最强记忆点，3 秒抓住妈妈；品牌名 + 销量背书建立第一眼信任。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 2 屏 · 痛点</span>
+    <h4>妈妈真正担心什么</h4>
+    <div class="copy-line"><span class="copy-main">营养吸收两难</span><span class="copy-sub">妈妈最怕这三点</span></div>
+    <div class="field"><span class="lab">画面描述</span>三格ICON：营养不全 / 喝了不吸收 / 奶源不放心。扁平插画，柔和色。AI Prompt：three worry icons, soft pastel, maternal style。</div>
+    <div class="field"><span class="lab">设计理由</span>先共情痛点，再在后续屏逐一解答，形成「提问—解答」说服链，比直接自夸更有代入感。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 3 屏 · 奶源信任</span>
+    <h4>北纬47°新鲜生牛乳</h4>
+    <div class="copy-line"><span class="copy-main">北纬47°奶源</span><span class="copy-sub">新鲜生牛乳直供</span></div>
+    <div class="field"><span class="lab">画面描述</span>中国地图标北纬47°黄金奶源带 + 牧场实景 + 挤奶冷链。绿意牧场、蓝天。AI Prompt：golden latitude 47 dairy farm, green pasture, fresh milk, cinematic。</div>
+    <div class="field"><span class="lab">设计理由</span>把「新鲜奶源」做成视觉主线（竞品少做），用地理 + 实景建立「真新鲜」的可信感，呼应「酪蛋白生牛乳」卖点。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 4 屏 · 营养矩阵</span>
+    <h4>超100种成长多维营养</h4>
+    <div class="copy-line"><span class="copy-main">100种多维营养</span><span class="copy-sub">成长所需全都有</span></div>
+    <div class="field"><span class="lab">画面描述</span>营养矩阵信息图：维生素/矿物质/蛋白分簇，环形排布，中心「100+」。配色按营养素分类。AI Prompt：nutrition matrix infographic, 100+ nutrients ring, clean。</div>
+    <div class="field"><span class="lab">设计理由</span>「100种」用可视化矩阵呈现「全」，比文字更有冲击力；须以实际配方表核对数目，避免虚标。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 5 屏 · 吸收（核心）</span>
+    <h4>好吸收 · 营养不浪费</h4>
+    <div class="copy-line"><span class="copy-main">好吸收少负担</span><span class="copy-sub">营养不白喝</span><span class="copy-tag">合规改写自「吸收率93%」</span></div>
+    <div class="field"><span class="lab">画面描述</span>肠道吸收示意：营养微粒进入肠道 + 对比「结块/流失」。柔和蓝绿。AI Prompt：gut absorption illustration, nutrient particles, soft。</div>
+    <div class="field"><span class="lab">设计理由</span>用户给「吸收率93%」若无检测实证不得直接使用（见广告法）；改写为「好吸收少负担」合规表达，并用 OPO/CPP 机制图支撑「吸收」逻辑。</div>
+    <div class="borrow"><b>【借鉴·君乐宝 CPP】</b> 补「酪蛋白磷酸肽助钙铁锌吸收」一句，强化吸收叙事（标注来源）。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 6 屏 · 优质蛋白</span>
+    <h4>优质酪蛋白生牛乳</h4>
+    <div class="copy-line"><span class="copy-main">优质酪蛋白</span><span class="copy-sub">A2β生牛乳</span></div>
+    <div class="field"><span class="lab">画面描述</span>牛奶分子结构特写（A2 β-酪蛋白示意）+ 新鲜生牛乳倾倒。AI Prompt：milk protein molecule close-up, fresh milk pour。</div>
+    <div class="field"><span class="lab">设计理由</span>把「酪蛋白生牛乳」翻译成妈妈能懂的「好蛋白＝好吸收」，与 a2/金领冠的 A2 话术形成对标。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 7 屏 · IMP蛋白</span>
+    <h4>IMP蛋白 · 加护一层</h4>
+    <div class="copy-line"><span class="copy-main">IMP蛋白加持</span><span class="copy-sub">成长多一重护</span><span class="copy-tag">名称待核实</span></div>
+    <div class="field"><span class="lab">画面描述</span>盾牌/光环包裹营养微粒的隐喻图，暖金色。AI Prompt：protective shield around nutrient, warm gold glow。</div>
+    <div class="field"><span class="lab">设计理由</span>把「IMP蛋白」包装成「加护」情绪价值；⚠️ IMP 疑为 HMO（母乳低聚糖）或免疫蛋白笔误，须按实际配方表核实名称后再上稿。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 8 屏 · 借鉴·肠道</span>
+    <h4>肠道舒服 · 不闹肚子</h4>
+    <div class="copy-line"><span class="copy-main">肠道更舒服</span><span class="copy-sub">宝宝少哭闹</span></div>
+    <div class="field"><span class="lab">画面描述</span>宝宝开心玩耍 + 益生元菌群ICON。AI Prompt：happy baby playing, probiotic icons, warm。</div>
+    <div class="field"><span class="lab">设计理由</span>吸收之上补「肠道舒服」，闭环解决妈妈「便秘/哭闹」顾虑。</div>
+    <div class="borrow"><b>【借鉴·爱他美 益生元】</b> 补「益生元组合呵护肠道」表述（标注来源，非本品专利）。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 9 屏 · 借鉴·眼脑</span>
+    <h4>眼脑营养 · 成长助力</h4>
+    <div class="copy-line"><span class="copy-main">DHA加MFGM</span><span class="copy-sub">营养助成长</span></div>
+    <div class="field"><span class="lab">画面描述</span>成分ICON（DHA鱼形 + MFGM膜结构）+ 宝宝探索世界。AI Prompt：DHA and MFGM icons, baby exploring, bright。</div>
+    <div class="field"><span class="lab">设计理由</span>补强「眼脑营养」维度，但仅作营养成分陈列，<b>不得写「益智/聪明/增强记忆力」</b>（广告法红线）。</div>
+    <div class="borrow"><b>【借鉴·美赞臣 蓝臻】</b> 补「乳铁蛋白 + MFGM」成分（标注来源）。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 10 屏 · 信任实证</span>
+    <h4>销量领先 · 亿万选择</h4>
+    <div class="copy-line"><span class="copy-main">销量领先见证</span><span class="copy-sub">亿万妈妈选择</span><span class="copy-tag">需有依据</span></div>
+    <div class="field"><span class="lab">画面描述</span>检测报告 / 配方注册号 / 工厂实景拼图，克制不夸张。AI Prompt：quality certificate collage, factory, clean。</div>
+    <div class="field"><span class="lab">设计理由</span>用资质 + 销量实证收口信任；「销量领先」须有第三方数据依据，避免「第一/最」绝对化。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 11 屏 · 分段适配</span>
+    <h4>分阶更贴心</h4>
+    <div class="copy-line"><span class="copy-main">分阶更贴心</span><span class="copy-sub">1/2/3段可选</span></div>
+    <div class="field"><span class="lab">画面描述</span>三段罐体并排（1段/2段/3段）+ 适用月龄标注。AI Prompt：three formula stages cans, age labels。</div>
+    <div class="field"><span class="lab">设计理由</span>帮妈妈按宝宝月龄自选，减少决策成本；明确标注适用月龄（有依据）。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 12 屏 · 行动号召</span>
+    <h4>现在带回家</h4>
+    <div class="copy-line"><span class="copy-main">现在带回家</span><span class="copy-sub">试喝装先体验</span></div>
+    <div class="field"><span class="lab">画面描述</span>规格套餐（单罐/箱装）+ 试喝装利益点 + 购买按钮。温馨场景。AI Prompt：product bundle with trial pack, warm CTA。</div>
+    <div class="field"><span class="lab">设计理由</span>用「试喝装先体验」降低首单门槛（奶粉复购高，首单转化关键），推动下单。</div>
+  </div>
+</section>
+
+<!-- 五、视觉方向 -->
+<section>
+  <h2>五、整体视觉方向</h2>
+  <div class="grid2">
+    <div>
+      <h3>配色</h3>
+      <div class="palette">
+        <div class="sw" style="background:#1B3A6B">信任深蓝</div>
+        <div class="sw" style="background:#2E5C9E">主色蓝</div>
+        <div class="sw" style="background:#E7F0F8">浅蓝底</div>
+        <div class="sw" style="background:#F7F3EE">奶白</div>
+        <div class="sw" style="background:#E0A03A">暖金强调</div>
+      </div>
+      <p style="font-size:14px">蓝＝专业信任，奶白＝干净安全，暖金＝品质点睛。避免大红大紫促销感、避免医疗冷感。</p>
+    </div>
+    <div>
+      <h3>摄影 / 字体 / 调性</h3>
+      <p style="font-size:14px"><b>摄影：</b>自然光为主，平视构图，牧场实景 + 罐体质感 + 宝宝情境（回避全脸特写更稳妥）。<br><b>字体：</b>阿里巴巴普惠体 / 思源黑体，清晰易读。<br><b>调性：</b>专业、安心、新鲜、有温度。<br><b>避免：</b>廉价爆炸贴、虚假参数大字报、过度卡通幼稚。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 六、广告法合规 -->
+<section>
+  <div class="warn-box">
+    <h3>⚠ 六、婴幼儿配方乳粉 · 广告法合规红线（必读）</h3>
+    <ul>
+      <li><b>「吸收率达93%」：</b>属数据/功效宣称，<b>必须有第三方检测报告或临床实证支撑</b>，否则不得擅自使用。建议改为「好吸收少负担」等合规表述，或在页面注明数据来源与检测机构。</li>
+      <li><b>禁替代母乳暗示：</b>不得使用「贴近母乳」「接近母乳」「以母乳为标准」「母乳黄金标准」等表述（竞品金领冠等常用，属违规风险）。</li>
+      <li><b>禁功效绝对化：</b>0–6 月婴儿奶粉广告全面禁止；较大婴儿/幼儿奶粉亦不得宣称「益智、增强抵抗力/免疫力、保护肠道、促进大脑发育、提高记忆力」等功效性用语，仅可作营养成分客观陈列。</li>
+      <li><b>禁绝对化用语：</b>不用「最、第一、顶级、100%、全能、唯一」等；「销量领先」须有依据，避免「销量第一」。</li>
+      <li><b>「IMP蛋白」待核实：</b>IMP 在奶粉语境不常见，疑为 HMO（母乳低聚糖）或某免疫蛋白笔误——按实际配方表核实名称后上稿，HMO 为合规营养素名。</li>
+      <li><b>「100种营养」须核对：</b>数字须与本品实际配料表/营养成分表一致，避免虚假宣传。</li>
+      <li><b>禁止医疗机构/专家推荐：</b>不得出现医生推荐、医疗机构背书。</li>
+      <li><b>借鉴卖点标注：</b>竞品独有专利成分（如某品牌 MFGM 特定表述）不得冒用，仅作「行业通用成分」陈列并标注借鉴来源。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 七、待补充 -->
+<section>
+  <h2>七、上线前待用户补充 / 核实清单</h2>
+  <table>
+    <tr><th style="width:34%">项目</th><th>说明</th></tr>
+    <tr><td>准确段位与规格</td><td>1段/2段/3段净含量、单价（本案以卓睿3段750g/¥298示例）。</td></tr>
+    <tr><td>吸收率93%实证</td><td>提供检测报告/临床数据；否则按合规文案改写。</td></tr>
+    <tr><td>IMP蛋白准确名称</td><td>核实是否为 HMO 或某免疫蛋白，以配方表为准。</td></tr>
+    <tr><td>实际配方成分</td><td>核对是否含 OPO、乳铁蛋白、CPP、益生元、DHA 等，用于借鉴屏落地。</td></tr>
+    <tr><td>销量/资质依据</td><td>提供「销量领先」的第三方数据来源与配方注册号。</td></tr>
+    <tr><td>商品直链替换</td><td>竞品链接替换为官方 item.jd.com 详情页直链（如需）。</td></tr>
+  </table>
+</section>
+
+<div class="footer">
+  本方案由「电商详情页策划 Skill v1.2.0」生成 · 品类：母婴奶粉（通用框架+母婴消费者逻辑）· 仅作前期策划，非成品页面 · 所有功效/数据宣称须以实际资质与法规为准。
+</div>
+
+</div>
+</body>
+</html>
