@@ -32,6 +32,7 @@
 | 🪣 日用品 | ✅ 专属画像 | `references/categories/daily-use.md`（母婴/居家/个护小物/配饰） |
 | 🧻 纸品 / 快消 | ✅ 框架覆盖 | 面巾纸、抽纸等，归 `daily-use.md`；案例见 `docs/example-tissue.html` |
 | 📷 小家电 | ✅ 专属画像 | `references/categories/small-appliance.md`（风扇/行车记录仪/监控摄像头，弹性逐屏） |
+| 🥛 乳制品 | ✅ 专属画像 | `references/categories/dairy.md`（牛奶/酸奶/奶酪/奶粉，含婴配粉广告法专节） |
 
 每个品类内置：消费者画像、视觉规则、竞品特征、FBE 示例、逐屏策略差异、广告法合规红线。
 
@@ -129,6 +130,7 @@ snack-ecommerce-detail-page/
 │       ├── wash-care.md              # 洗护用品品类画像（含广告法合规规则）
 │       ├── daily-use.md              # 日用品品类画像（母婴/居家/个护小物/配饰，含广告法合规）
 │       └── small-appliance.md        # 小家电品类画像（风扇/行车记录仪/监控摄像头，含广告法合规）
+│       └── dairy.md                  # 乳制品品类画像（牛奶/酸奶/奶酪/奶粉，含婴配粉广告法专节）
 └── assets/
     └── html-templates/
         └── template-general.html     # 通用详情页 HTML 模板（750px，CSS 变量可定制）

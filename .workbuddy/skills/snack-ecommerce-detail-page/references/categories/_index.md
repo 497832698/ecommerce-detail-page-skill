@@ -10,6 +10,7 @@
 | 洗护用品 | `references/categories/wash-care.md` | 洗发水、沐浴露、洗衣凝珠、洗衣液、身体乳、洗护、香氛、婴标洗护、衣物护理、防晒霜、护臀膏|
 | 日用品 | `references/categories/daily-use.md` | 婴儿浴桶、洗脸盆、洗头帽、梳子、指甲钳、防晒帽、浴桶、母婴用品、日用品、个护小物、个护配饰|
 | 小家电 | `references/categories/small-appliance.md` | 风扇、手持风扇、数显风扇、小风扇、行车记录仪、记录仪、监控摄像头、摄像头、监控、小家电、Dash cam|
+| 乳制品 | `references/categories/dairy.md` | 牛奶、纯牛奶、鲜奶、低温奶、常温奶、酸奶、风味酸奶、常温酸奶、奶酪、奶酪棒、芝士、芝士棒、马苏里拉、黄油、奶油、奶粉、婴配粉、成人奶粉、中老年奶粉、乳业、乳制品、奶制品|
 
 ## 通用框架（未匹配品类时使用）
 
